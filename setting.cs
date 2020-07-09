@@ -33,7 +33,7 @@ namespace smartfarm
         {
             if (!pl_UIback.Controls.Contains(ucPanel_temp.instance))
             {
-                pl_UIback.Contains(ucPanel_temp.instance);
+                pl_UIback.Controls.Add(ucPanel_temp.instance);
                 ucPanel_temp.instance.Dock = DockStyle.Fill;
                 ucPanel_temp.instance.BringToFront();
             }
@@ -45,7 +45,7 @@ namespace smartfarm
         {
             if (!pl_UIback.Controls.Contains(ucPanel_Humi.instance))
             {
-                pl_UIback.Contains(ucPanel_Humi.instance);
+                pl_UIback.Controls.Add(ucPanel_Humi.instance);
                 ucPanel_Humi.instance.Dock = DockStyle.Fill;
                 ucPanel_Humi.instance.BringToFront();
             }
@@ -57,7 +57,7 @@ namespace smartfarm
         {
             if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
             {
-                pl_UIback.Contains(ucPanel_Water.instance);
+                pl_UIback.Controls.Add(ucPanel_Water.instance);
                 ucPanel_Water.instance.Dock = DockStyle.Fill;
                 ucPanel_Water.instance.BringToFront();
             }
@@ -69,12 +69,17 @@ namespace smartfarm
         {
             if (!pl_UIback.Controls.Contains(ucPanel_fan.instance))
             {
-                pl_UIback.Contains(ucPanel_fan.instance);
+                pl_UIback.Controls.Add(ucPanel_fan.instance);
                 ucPanel_fan.instance.Dock = DockStyle.Fill;
                 ucPanel_fan.instance.BringToFront();
             }
             else
                 ucPanel_fan.instance.BringToFront();
+        }
+
+        private void pb_temp_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

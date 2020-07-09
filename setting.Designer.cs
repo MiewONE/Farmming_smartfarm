@@ -118,6 +118,7 @@
             this.pb_temp.Size = new System.Drawing.Size(104, 43);
             this.pb_temp.TabIndex = 1;
             this.pb_temp.TabStop = false;
+            this.pb_temp.Click += new System.EventHandler(this.pb_temp_Click);
             this.pb_temp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_temp_MouseUp);
             // 
             // pictureBox2
@@ -199,8 +200,10 @@
             // 
             // pl_UIback
             // 
+            this.pl_UIback.BackColor = System.Drawing.Color.White;
             this.pl_UIback.Controls.Add(this.label1);
-            this.pl_UIback.Location = new System.Drawing.Point(56, 254);
+            this.pl_UIback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_UIback.Location = new System.Drawing.Point(0, 43);
             this.pl_UIback.Name = "pl_UIback";
             this.pl_UIback.Size = new System.Drawing.Size(784, 317);
             this.pl_UIback.TabIndex = 18;
