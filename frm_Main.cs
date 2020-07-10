@@ -31,11 +31,6 @@ namespace smartfarm
             this.Size = new Size(800, 480);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            pb_test.Image = Resources.se_1;
-        }
-
         private static DateTime Delay(int MS)
         {
             DateTime ThisMoment = DateTime.Now;
@@ -53,6 +48,15 @@ namespace smartfarm
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
+            //DB에 연결하여 지금 자동 상태인지, 수동상태인지 체크 후 표시 구현중에서는 variable값 참고하여하기
+            if (variable.instance.Mode == true)//수동 false, 자동 true
+            {
+                pb_auto.Image = Resources.수동;
+            }
+            else
+            {
+                pb_auto.Image = Resources.자동;
+            }
             //DB.Instance.DBcon();
             //DB.Instance.DBorTable_Create();
             //DB.Instance.query_execute("select * from setting;", "select");
@@ -67,6 +71,25 @@ namespace smartfarm
         {
             pb_setting.Image = Resources.se_1_2;
             setting.instance.Show();
+        }
+
+        private void pb_chageMode_click_MouseDown(object sender, MouseEventArgs e)
+        {
+            pb_chageMode_click.Image = Resources.Circulation_BT_2;
+        }
+
+        private void pb_chageMode_click_MouseUp(object sender, MouseEventArgs e)
+        {
+            pb_chageMode_click.Image = Resources.Circulation_BT;
+            //pb_auto.Image = Resources.
+            if(variable.instance.Mode == true)//수동 false, 자동 true
+            {
+                pb_auto.Image = Resources.수동;
+            }
+            else
+            {
+                pb_auto.Image = Resources.자동;
+            }
         }
     }
 }
