@@ -36,6 +36,9 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="Comfile.ComfilePi">
+      <HintPath>Comfile.ComfilePi\bin\Debug\Comfile.ComfilePi.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -273,6 +276,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\UI_settingclose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\icons\btn_off_mouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\icons\btn_on_mouseDown.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

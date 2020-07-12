@@ -37,7 +37,7 @@ namespace smartfarm
          public bool Mode = false; // 수동 false, 자동 true
 
         //운전 시작,정지 상황
-         public bool temp = false;
+         public bool temp = false; // OFF false , ON true
          public bool humin = false;
          public bool pump = false;
          public bool light = false;

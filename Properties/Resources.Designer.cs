@@ -83,9 +83,29 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_off_mouseDown {
+            get {
+                object obj = ResourceManager.GetObject("btn_off_mouseDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap btn_on {
             get {
                 object obj = ResourceManager.GetObject("btn_on", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap btn_on_mouseDown {
+            get {
+                object obj = ResourceManager.GetObject("btn_on_mouseDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
