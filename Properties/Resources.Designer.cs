@@ -193,6 +193,26 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap UI_apply_ver4 {
+            get {
+                object obj = ResourceManager.GetObject("UI_apply_ver4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap UI_settingclose {
+            get {
+                object obj = ResourceManager.GetObject("UI_settingclose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap white_led {
             get {
                 object obj = ResourceManager.GetObject("white_led", resourceCulture);
