@@ -268,6 +268,11 @@
   <ItemGroup>
     <None Include="UI\New_UI\farmmin1sg.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\UI_apply_ver4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UI_settingclose.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
