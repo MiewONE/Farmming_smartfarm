@@ -61,10 +61,10 @@ namespace smartfarm
             //_buttons.Add(GPIO.Output19.IsOn, pb_pump);
             //_buttons.Add(GPIO.Output20.IsOn, pb_fan);
 
-            foreach(var off in GPIO.Outputs)
-            {
-                off.IsOn = false;
-            }
+            //foreach(var off in GPIO.Outputs)
+            //{
+            //    off.IsOn = false;
+            //}
             //DB에 연결하여 지금 자동 상태인지, 수동상태인지 체크 후 표시 구현중에서는 variable값 참고하여하기
             if (variable.instance.Mode == true)//수동 false, 자동 true
             {
@@ -137,12 +137,12 @@ namespace smartfarm
             if (variable.instance.humin)
             {
                 pb_humi.Image = Resources.btn_off;
-                GPIO.Output17.IsOn = false;
+                //GPIO.Output17.IsOn = false;
             }
             else
             {
                 pb_humi.Image = Resources.btn_on;
-                GPIO.Output17.IsOn = true;
+                //GPIO.Output17.IsOn = true;
             }
             variable.instance.humin = !variable.instance.humin;
             
