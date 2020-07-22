@@ -1,0 +1,11 @@
+PictureBox 속성
+Se_water = 펌프
+Se_Fan = 펜
+Se_Humi = 가습기
+Se_temp = 히터
+Se_Title = 환경설정 타이틀
+Se_logo = 환경설정 로고
+PictureBox img
+적용 = 적용1,   누르면 효과나오는 적용Push = 2개
+닫기 = 닫기,    누르면 효과나오는 닫기Push = 2개
+환경설정 Title 하나

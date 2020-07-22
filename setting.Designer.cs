@@ -29,32 +29,37 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.Se_Title = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pl_UIback = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Se_logo = new System.Windows.Forms.PictureBox();
+            this.Se_Temp = new System.Windows.Forms.PictureBox();
+            this.Se_Humi = new System.Windows.Forms.PictureBox();
+            this.Se_Fan = new System.Windows.Forms.PictureBox();
+            this.Se_Water = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Title)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Temp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Humi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Fan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Water)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.Se_Title);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -63,23 +68,32 @@
             this.panel1.Size = new System.Drawing.Size(800, 81);
             this.panel1.TabIndex = 21;
             // 
-            // pictureBox6
+            // pictureBox2
             // 
-            this.pictureBox6.Image = global::smartfarm.Properties.Resources.UI_apply_ver4;
-            this.pictureBox6.Location = new System.Drawing.Point(595, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox6.TabIndex = 22;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox2.Image = global::smartfarm.Properties.Resources.적용1;
+            this.pictureBox2.Location = new System.Drawing.Point(573, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
             // 
-            // pictureBox7
+            // pictureBox3
             // 
-            this.pictureBox7.Image = global::smartfarm.Properties.Resources.UI_settingclose;
-            this.pictureBox7.Location = new System.Drawing.Point(697, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox7.TabIndex = 23;
-            this.pictureBox7.TabStop = false;
+            this.pictureBox3.Image = global::smartfarm.Properties.Resources.닫기;
+            this.pictureBox3.Location = new System.Drawing.Point(673, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.TabIndex = 23;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Se_Title
+            // 
+            this.Se_Title.Image = global::smartfarm.Properties.Resources.환경설정;
+            this.Se_Title.Location = new System.Drawing.Point(30, 12);
+            this.Se_Title.Name = "Se_Title";
+            this.Se_Title.Size = new System.Drawing.Size(400, 50);
+            this.Se_Title.TabIndex = 24;
+            this.Se_Title.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -102,50 +116,6 @@
             this.panel3.Size = new System.Drawing.Size(800, 399);
             this.panel3.TabIndex = 22;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 64);
-            this.panel2.TabIndex = 21;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(302, -1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 64);
-            this.pictureBox5.TabIndex = 22;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(201, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 64);
-            this.pictureBox4.TabIndex = 22;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(101, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 64);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 64);
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
-            // 
             // pl_UIback
             // 
             this.pl_UIback.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -153,6 +123,64 @@
             this.pl_UIback.Name = "pl_UIback";
             this.pl_UIback.Size = new System.Drawing.Size(800, 335);
             this.pl_UIback.TabIndex = 22;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Se_logo);
+            this.panel2.Controls.Add(this.Se_Temp);
+            this.panel2.Controls.Add(this.Se_Humi);
+            this.panel2.Controls.Add(this.Se_Fan);
+            this.panel2.Controls.Add(this.Se_Water);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 64);
+            this.panel2.TabIndex = 21;
+            // 
+            // Se_logo
+            // 
+            this.Se_logo.Image = global::smartfarm.Properties.Resources.farmmin1sg1;
+            this.Se_logo.Location = new System.Drawing.Point(520, 14);
+            this.Se_logo.Name = "Se_logo";
+            this.Se_logo.Size = new System.Drawing.Size(209, 40);
+            this.Se_logo.TabIndex = 25;
+            this.Se_logo.TabStop = false;
+            // 
+            // Se_Temp
+            // 
+            this.Se_Temp.Image = global::smartfarm.Properties.Resources.히터;
+            this.Se_Temp.Location = new System.Drawing.Point(302, -1);
+            this.Se_Temp.Name = "Se_Temp";
+            this.Se_Temp.Size = new System.Drawing.Size(100, 64);
+            this.Se_Temp.TabIndex = 22;
+            this.Se_Temp.TabStop = false;
+            // 
+            // Se_Humi
+            // 
+            this.Se_Humi.Image = global::smartfarm.Properties.Resources.가습기1;
+            this.Se_Humi.Location = new System.Drawing.Point(201, 0);
+            this.Se_Humi.Name = "Se_Humi";
+            this.Se_Humi.Size = new System.Drawing.Size(100, 64);
+            this.Se_Humi.TabIndex = 22;
+            this.Se_Humi.TabStop = false;
+            // 
+            // Se_Fan
+            // 
+            this.Se_Fan.Image = global::smartfarm.Properties.Resources.펜;
+            this.Se_Fan.Location = new System.Drawing.Point(101, 0);
+            this.Se_Fan.Name = "Se_Fan";
+            this.Se_Fan.Size = new System.Drawing.Size(100, 64);
+            this.Se_Fan.TabIndex = 22;
+            this.Se_Fan.TabStop = false;
+            // 
+            // Se_Water
+            // 
+            this.Se_Water.Image = global::smartfarm.Properties.Resources.펌프;
+            this.Se_Water.Location = new System.Drawing.Point(1, -1);
+            this.Se_Water.Name = "Se_Water";
+            this.Se_Water.Size = new System.Drawing.Size(100, 64);
+            this.Se_Water.TabIndex = 22;
+            this.Se_Water.TabStop = false;
             // 
             // setting
             // 
@@ -165,15 +193,17 @@
             this.Name = "setting";
             this.Text = "setting";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Title)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Temp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Humi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Fan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Se_Water)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,14 +211,16 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pl_UIback;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox Se_Temp;
+        private System.Windows.Forms.PictureBox Se_Humi;
+        private System.Windows.Forms.PictureBox Se_Fan;
+        private System.Windows.Forms.PictureBox Se_Water;
+        private System.Windows.Forms.PictureBox Se_Title;
+        private System.Windows.Forms.PictureBox Se_logo;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

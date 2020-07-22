@@ -28,5 +28,10 @@ namespace smartfarm.Setting_ui
         {
             InitializeComponent();
         }
+
+        private void ucPanel_Humi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

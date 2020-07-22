@@ -37,7 +37,7 @@
       <HintPath>packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="Comfile.ComfilePi">
-      <HintPath>..\kakaodown\SmartFarm\SmartFarm\bin\Debug\Comfile.ComfilePi.dll</HintPath>
+      <HintPath>Comfile.ComfilePi\Comfile.ComfilePi.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
@@ -282,6 +282,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UI\icons\btn_on_mouseDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\Fan_lostbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\펜.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\펜_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\가습기.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\가습기1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\가습기_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\가습기_lostbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\히터.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\히터_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\히터_lostbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\펌프.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\펌프_bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\펌프_lostbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\적용1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\적용push.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\닫기.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\닫기Push.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\환경설정.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\가동시간1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\수동1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\습도표시last.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\온도표시.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\자동1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\정지시간1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
