@@ -76,6 +76,8 @@
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
             // 
             // pictureBox3
             // 
@@ -85,6 +87,8 @@
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
+            this.pictureBox3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseUp);
             // 
             // Se_Title
             // 
@@ -181,6 +185,8 @@
             this.Se_Water.Size = new System.Drawing.Size(100, 64);
             this.Se_Water.TabIndex = 22;
             this.Se_Water.TabStop = false;
+            this.Se_Water.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Se_Water_MouseDown);
+            this.Se_Water.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Se_Water_MouseUp);
             // 
             // setting
             // 
@@ -191,6 +197,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "setting";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "setting";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

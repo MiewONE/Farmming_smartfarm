@@ -8,29 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using smartfarm.Setting_ui;
+using smartfarm.Properties;
 namespace smartfarm
 {
     public partial class setting : Form
     {
-        private static setting Instance;
-        public static setting instance
-        {
-            get
-            {
-                if(Instance == null)
-                {
-                    Instance = new setting();
-                }
-                return Instance;
-            }
-        }
+        //private static setting Instance;
+        List<Image> icons = new List<Image>();
+        //public static setting instance
+        //{
+        //    get
+        //    {
+        //        if(Instance == null)
+        //        {
+        //            Instance = new setting();
+        //        }
+        //        return Instance;
+        //    }
+        //}
         public setting()
         {
             InitializeComponent();
+            icons.Add(Resources.펌프_bar);
         }
 
         private void pb_temp_MouseUp(object sender, MouseEventArgs e)
         {
+            MessageBox.Show("Test");
             if (!pl_UIback.Controls.Contains(ucPanel_temp.instance))
             {
                 pl_UIback.Controls.Add(ucPanel_temp.instance);
@@ -55,14 +59,7 @@ namespace smartfarm
 
         private void pb_pump_MouseUp(object sender, MouseEventArgs e)
         {
-            if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
-            {
-                pl_UIback.Controls.Add(ucPanel_Water.instance);
-                ucPanel_Water.instance.Dock = DockStyle.Fill;
-                ucPanel_Water.instance.BringToFront();
-            }
-            else
-                ucPanel_Water.instance.BringToFront();
+            
         }
 
         private void pb_fan_MouseUp(object sender, MouseEventArgs e)
@@ -80,6 +77,61 @@ namespace smartfarm
         private void pb_temp_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Se_Water_MouseDown(object sender, MouseEventArgs e)
+        {
+            Se_Water.Image = Resources.펌프_bar;
+        }
+
+        private void Se_Water_MouseUp(object sender, MouseEventArgs e)
+        {
+            if(ucPanel_Water.instance.IsDisposed)
+            {
+                //ucPanel_Water.instance.Show();
+                ucPanel_Water.instance.CreateControl();
+            }
+            Se_Water.Image = Resources.펌프_lostbar;
+            if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
+            {
+                pl_UIback.Controls.Add(ucPanel_Water.instance);
+                ucPanel_Water.instance.Dock = DockStyle.Fill;
+                ucPanel_Water.instance.BringToFront();
+            }
+            else
+                ucPanel_Water.instance.BringToFront();
+        }
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox3.Image = Resources.닫기Push;
+        }
+
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox3.Image = Resources.닫기;
+            ucPanel_fan.instance.Dispose();
+            ucPanel_Humi.instance.Dispose();
+            ucPanel_temp.instance.Dispose();
+            ucPanel_Water.instance.Dispose();
+
+            //this.Close();
+            //this.Dispose();
+            this.RemoveOwnedForm(this);
+
+            //Instance = null;
+
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBox2.Image = Resources.적용1;
+            //db 신호
+        }
+
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBox2.Image = Resources.적용push;
         }
     }
 }

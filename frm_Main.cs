@@ -92,7 +92,8 @@ namespace smartfarm
         private void pb_setting_MouseUp(object sender, MouseEventArgs e)
         {
             pb_setting.Image = Resources.se_1_2;
-            setting.instance.Show();
+            setting st = new setting();
+            st.Show();
         }
 
         private void pb_chageMode_click_MouseDown(object sender, MouseEventArgs e)
