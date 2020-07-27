@@ -176,10 +176,12 @@
             this.Se_Fan.Size = new System.Drawing.Size(100, 64);
             this.Se_Fan.TabIndex = 22;
             this.Se_Fan.TabStop = false;
+            this.Se_Fan.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Se_Fan_MouseDown);
+            this.Se_Fan.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Se_Fan_MouseUp);
             // 
             // Se_Water
             // 
-            this.Se_Water.Image = global::smartfarm.Properties.Resources.펌프;
+            this.Se_Water.Image = global::smartfarm.Properties.Resources.펌프_bar;
             this.Se_Water.Location = new System.Drawing.Point(1, -1);
             this.Se_Water.Name = "Se_Water";
             this.Se_Water.Size = new System.Drawing.Size(100, 64);

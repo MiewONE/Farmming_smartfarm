@@ -13,19 +13,19 @@ namespace smartfarm
 {
     public partial class setting : Form
     {
-        //private static setting Instance;
+        private static setting Instance;
         List<Image> icons = new List<Image>();
-        //public static setting instance
-        //{
-        //    get
-        //    {
-        //        if(Instance == null)
-        //        {
-        //            Instance = new setting();
-        //        }
-        //        return Instance;
-        //    }
-        //}
+        public static setting instance
+        {
+            get
+            {
+                if (Instance == null)
+                {
+                    Instance = new setting();
+                }
+                return Instance;
+            }
+        }
         public setting()
         {
             InitializeComponent();
@@ -82,6 +82,9 @@ namespace smartfarm
         private void Se_Water_MouseDown(object sender, MouseEventArgs e)
         {
             Se_Water.Image = Resources.펌프_bar;
+            Se_Humi.Image = Resources.가습기_bar;
+            Se_Fan.Image = Resources.펜_bar;
+            Se_Temp.Image = Resources.히터_bar;
         }
 
         private void Se_Water_MouseUp(object sender, MouseEventArgs e)
@@ -91,15 +94,19 @@ namespace smartfarm
                 //ucPanel_Water.instance.Show();
                 ucPanel_Water.instance.CreateControl();
             }
-            Se_Water.Image = Resources.펌프_lostbar;
-            if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
-            {
-                pl_UIback.Controls.Add(ucPanel_Water.instance);
-                ucPanel_Water.instance.Dock = DockStyle.Fill;
-                ucPanel_Water.instance.BringToFront();
-            }
             else
-                ucPanel_Water.instance.BringToFront();
+            {
+                Se_Water.Image = Resources.펌프_lostbar;
+                if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
+                {
+                    pl_UIback.Controls.Add(ucPanel_Water.instance);
+                    ucPanel_Water.instance.Dock = DockStyle.Fill;
+                    ucPanel_Water.instance.BringToFront();
+                }
+                else
+                    ucPanel_Water.instance.BringToFront();
+            }
+            
         }
 
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
@@ -110,14 +117,14 @@ namespace smartfarm
         private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox3.Image = Resources.닫기;
-            ucPanel_fan.instance.Dispose();
-            ucPanel_Humi.instance.Dispose();
-            ucPanel_temp.instance.Dispose();
-            ucPanel_Water.instance.Dispose();
+            //ucPanel_fan.instance.Dispose();
+            //ucPanel_Humi.instance.Dispose();
+            //ucPanel_temp.instance.Dispose();
+            //ucPanel_Water.instance.Dispose();
 
-            //this.Close();
+            this.Close();
             //this.Dispose();
-            this.RemoveOwnedForm(this);
+            //this.RemoveOwnedForm(this);
 
             //Instance = null;
 
@@ -132,6 +139,26 @@ namespace smartfarm
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
         {
             pictureBox2.Image = Resources.적용push;
+        }
+
+        private void Se_Fan_MouseUp(object sender, MouseEventArgs e)
+        {
+            Se_Fan.Image = Resources.Fan_lostbar;
+            if (!pl_UIback.Controls.Contains(ucPanel_fan.instance))
+            {
+                pl_UIback.Controls.Add(ucPanel_fan.instance);
+                ucPanel_fan.instance.Dock = DockStyle.Fill;
+                ucPanel_fan.instance.BringToFront();
+            }
+            else
+                ucPanel_fan.instance.BringToFront();
+        }
+
+        private void Se_Fan_MouseDown(object sender, MouseEventArgs e)
+        {
+            Se_Humi.Image = Resources.가습기_bar;
+            Se_Fan.Image = Resources.펜_bar;
+            Se_Temp.Image = Resources.히터_bar;
         }
     }
 }

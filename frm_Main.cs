@@ -92,28 +92,9 @@ namespace smartfarm
         private void pb_setting_MouseUp(object sender, MouseEventArgs e)
         {
             pb_setting.Image = Resources.se_1_2;
-            setting st = new setting();
-            st.Show();
-        }
-
-        private void pb_chageMode_click_MouseDown(object sender, MouseEventArgs e)
-        {
-            pb_chageMode_click.Image = Resources.Circulation_BT_2;
-        }
-
-        private void pb_chageMode_click_MouseUp(object sender, MouseEventArgs e)
-        {
-            pb_chageMode_click.Image = Resources.Circulation_BT;
-            //pb_auto.Image = Resources.
-            if(variable.instance.Mode == true)//수동 false, 자동 true
-            {
-                pb_auto.Image = Resources.수동;
-            }
-            else
-            {
-                pb_auto.Image = Resources.자동;
-            }
-            variable.instance.Mode = !variable.instance.Mode;
+            //setting st = new setting();
+            //st.Show();
+            setting.instance.ShowDialog();
         }
 
         private void Event_mouseDown()
@@ -249,6 +230,26 @@ namespace smartfarm
         private void pb_auto_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            //pb_chageMode_click.Image = Resources.Circulation_BT_2;
+        }
+
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            //pb_chageMode_click.Image = Resources.Circulation_BT;
+            //pb_auto.Image = Resources.
+            if (variable.instance.Mode == true)//수동 false, 자동 true
+            {
+                pictureBox1.Image = Resources.수동On_자동Off;
+            }
+            else
+            {
+                pictureBox1.Image = Resources.수동Off_자동On;
+            }
+            variable.instance.Mode = !variable.instance.Mode;
         }
     }
 }
