@@ -363,6 +363,26 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 수동Off_자동On {
+            get {
+                object obj = ResourceManager.GetObject("수동Off_자동On", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 수동On_자동Off {
+            get {
+                object obj = ResourceManager.GetObject("수동On_자동Off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 습도_OFF {
             get {
                 object obj = ResourceManager.GetObject("습도_OFF", resourceCulture);
@@ -563,9 +583,29 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap 평상시 {
+            get {
+                object obj = ResourceManager.GetObject("평상시", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap 환경설정 {
             get {
                 object obj = ResourceManager.GetObject("환경설정", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 환경설정1 {
+            get {
+                object obj = ResourceManager.GetObject("환경설정1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

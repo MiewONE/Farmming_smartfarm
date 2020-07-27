@@ -245,5 +245,10 @@ namespace smartfarm
                 pb_setting.Location + "" +
                 pb_help.Location);
         }
+
+        private void pb_auto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
