@@ -88,7 +88,7 @@
             // 
             // Se_Title
             // 
-            this.Se_Title.Image = global::smartfarm.Properties.Resources.환경설정;
+            this.Se_Title.Image = global::smartfarm.Properties.Resources.환경설정1;
             this.Se_Title.Location = new System.Drawing.Point(30, 12);
             this.Se_Title.Name = "Se_Title";
             this.Se_Title.Size = new System.Drawing.Size(400, 50);

@@ -355,5 +355,17 @@
   <ItemGroup>
     <None Include="UI\Setting_ui\정지시간1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\수동Off_자동On.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\수동On_자동Off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\New_UI\평상시.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\환경설정1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
