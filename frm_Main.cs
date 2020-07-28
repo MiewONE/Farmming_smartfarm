@@ -4,11 +4,13 @@ using System.Windows.Forms;
 using smartfarm.Properties;
 using Comfile.ComfilePi;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace smartfarm
 {
     public partial class frm_Main : Form
     {
+        private BackgroundWorker worker;
         public frm_Main()
         {
             InitializeComponent();
@@ -35,9 +37,44 @@ namespace smartfarm
 
 
             this.Size = new Size(800, 480);
+
+            //worker 백그라운드
+            worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.WorkerSupportsCancellation = true;
+            worker.DoWork += new DoWorkEventHandler(worker_DoWork);
+            worker.ProgressChanged += new ProgressChangedEventHandler(worker_ProgressChanged);
+            worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(worker_RunWorkerCompleted);
         }
 
-        
+        #region 백그라운드 
+        void worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            
+        }
+
+        // Progress 리포트 - UI Thread
+        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            
+        }
+
+        // 작업 완료 - UI Thread
+        void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            // 에러가 있는지 체크
+            if (e.Error != null)
+            {
+                //lblMsg.Text = e.Error.Message;
+                MessageBox.Show(e.Error.Message, "Error");
+                return;
+            }
+
+            //lblMsg.Text = "성공적으로 완료되었습니다";
+        }
+
+
+        #endregion
         private static DateTime Delay(int MS)
         {
             DateTime ThisMoment = DateTime.Now;
@@ -69,21 +106,29 @@ namespace smartfarm
             if (variable.instance.Mode == true)//수동 false, 자동 true
             {
                 pb_auto.Image = Resources.수동;
+                pictureBox1.Image = Resources.수동On_자동Off;
+                panel4.Visible = true;
+                panel5.Visible = true;
             }
             else
             {
                 pb_auto.Image = Resources.자동;
+                pictureBox1.Image = Resources.수동Off_자동On;
+                panel4.Visible = false;
+                panel5.Visible = false;
                 
             }
             if (variable.instance.temp  ) pb_temp.Image = Resources.btn_on; else pb_temp.Image = Resources.btn_off;
             if (variable.instance.humin ) pb_humi.Image = Resources.btn_on; else pb_humi.Image = Resources.btn_off;
             if (variable.instance.fan   ) pb_fan.Image = Resources.btn_on; else pb_fan.Image = Resources.btn_off;
             if (variable.instance.pump  ) pb_pump.Image = Resources.btn_on; else pb_pump.Image = Resources.btn_off;
+
+            worker.RunWorkerAsync();
             //DB.Instance.DBcon();
             //DB.Instance.DBorTable_Create();
             //DB.Instance.query_execute("select * from setting;", "select");
         }
-
+         
         private void pb_setting_MouseDown(object sender, MouseEventArgs e)
         {
             pb_setting.Image = Resources.se_1;
@@ -119,12 +164,12 @@ namespace smartfarm
             if (variable.instance.humin)
             {
                 pb_humi.Image = Resources.btn_off;
-                //GPIO.Output17.IsOn = false;
+                GPIO.Output19.IsOn = false;
             }
             else
             {
                 pb_humi.Image = Resources.btn_on;
-                //GPIO.Output17.IsOn = true;
+                GPIO.Output19.IsOn = true;
             }
             variable.instance.humin = !variable.instance.humin;
             
@@ -229,7 +274,19 @@ namespace smartfarm
 
         private void pb_auto_Click(object sender, EventArgs e)
         {
+            if (variable.instance.Mode == true)//수동 false, 자동 true
+            {
+                pb_auto.Image = Resources.수동;
+                panel4.Visible = true;
+                panel5.Visible = true;
+            }
+            else
+            {
+                pb_auto.Image = Resources.자동;
+                panel4.Visible = false;
+                panel5.Visible = false;
 
+            }
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
