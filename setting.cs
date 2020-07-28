@@ -81,10 +81,10 @@ namespace smartfarm
 
         private void Se_Water_MouseDown(object sender, MouseEventArgs e)
         {
-            Se_Water.Image = Resources.펌프_bar;
-            Se_Humi.Image = Resources.가습기_bar;
-            Se_Fan.Image = Resources.펜_bar;
-            Se_Temp.Image = Resources.히터_bar;
+            Se_Water.Image = Resources.pump_bar;
+            Se_Humi.Image = Resources.humin_bar;
+            Se_Fan.Image = Resources.fan_bar;
+            Se_Temp.Image = Resources.heater_bar;
         }
 
         private void Se_Water_MouseUp(object sender, MouseEventArgs e)
@@ -96,7 +96,7 @@ namespace smartfarm
             }
             else
             {
-                Se_Water.Image = Resources.펌프_lostbar;
+                Se_Water.Image = Resources.pump;
                 if (!pl_UIback.Controls.Contains(ucPanel_Water.instance))
                 {
                     pl_UIback.Controls.Add(ucPanel_Water.instance);
@@ -143,7 +143,7 @@ namespace smartfarm
 
         private void Se_Fan_MouseUp(object sender, MouseEventArgs e)
         {
-            Se_Fan.Image = Resources.Fan_lostbar;
+            Se_Fan.Image = Resources.fan;
             if (!pl_UIback.Controls.Contains(ucPanel_fan.instance))
             {
                 pl_UIback.Controls.Add(ucPanel_fan.instance);
@@ -156,9 +156,10 @@ namespace smartfarm
 
         private void Se_Fan_MouseDown(object sender, MouseEventArgs e)
         {
-            Se_Humi.Image = Resources.가습기_bar;
-            Se_Fan.Image = Resources.펜_bar;
-            Se_Temp.Image = Resources.히터_bar;
+            Se_Water.Image = Resources.pump_bar;
+            Se_Humi.Image = Resources.humin_bar;
+            Se_Fan.Image = Resources.fan_bar;
+            Se_Temp.Image = Resources.heater_bar;
         }
     }
 }

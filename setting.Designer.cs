@@ -110,7 +110,7 @@
             // 
             // Se_Temp
             // 
-            this.Se_Temp.Image = global::smartfarm.Properties.Resources._2020_07_28히터;
+            this.Se_Temp.Image = global::smartfarm.Properties.Resources.heater;
             this.Se_Temp.Location = new System.Drawing.Point(302, -1);
             this.Se_Temp.Name = "Se_Temp";
             this.Se_Temp.Size = new System.Drawing.Size(100, 64);
@@ -119,7 +119,7 @@
             // 
             // Se_Humi
             // 
-            this.Se_Humi.Image = global::smartfarm.Properties.Resources._2020_07_28가습기;
+            this.Se_Humi.Image = global::smartfarm.Properties.Resources.humin;
             this.Se_Humi.Location = new System.Drawing.Point(201, 0);
             this.Se_Humi.Name = "Se_Humi";
             this.Se_Humi.Size = new System.Drawing.Size(100, 64);
@@ -128,7 +128,7 @@
             // 
             // Se_Fan
             // 
-            this.Se_Fan.Image = global::smartfarm.Properties.Resources._2020_07_28Fan;
+            this.Se_Fan.Image = global::smartfarm.Properties.Resources.fan;
             this.Se_Fan.Location = new System.Drawing.Point(101, 0);
             this.Se_Fan.Name = "Se_Fan";
             this.Se_Fan.Size = new System.Drawing.Size(100, 64);
@@ -139,7 +139,7 @@
             // 
             // Se_Water
             // 
-            this.Se_Water.Image = global::smartfarm.Properties.Resources._2020_07_28펌프;
+            this.Se_Water.Image = global::smartfarm.Properties.Resources.pump;
             this.Se_Water.Location = new System.Drawing.Point(1, -1);
             this.Se_Water.Name = "Se_Water";
             this.Se_Water.Size = new System.Drawing.Size(100, 64);
@@ -150,7 +150,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::smartfarm.Properties.Resources._2020_07_08적용;
+            this.pictureBox2.Image = global::smartfarm.Properties.Resources.apply;
             this.pictureBox2.Location = new System.Drawing.Point(573, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
@@ -161,7 +161,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::smartfarm.Properties.Resources._2020_07_28닫기;
+            this.pictureBox3.Image = global::smartfarm.Properties.Resources.close;
             this.pictureBox3.Location = new System.Drawing.Point(673, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 50);

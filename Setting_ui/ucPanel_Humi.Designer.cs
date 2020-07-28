@@ -34,21 +34,17 @@
             this.StopMM = new System.Windows.Forms.TextBox();
             this.StartMM = new System.Windows.Forms.TextBox();
             this.HighHumidity = new System.Windows.Forms.TextBox();
-            this.HighTemperature = new System.Windows.Forms.TextBox();
             this.LowHumidity = new System.Windows.Forms.TextBox();
-            this.LowTemperature = new System.Windows.Forms.TextBox();
             this.StopHH = new System.Windows.Forms.TextBox();
             this.StartHH = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -105,7 +101,7 @@
             // 
             this.HighHumidity.BackColor = System.Drawing.SystemColors.Control;
             this.HighHumidity.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.HighHumidity.Location = new System.Drawing.Point(290, 271);
+            this.HighHumidity.Location = new System.Drawing.Point(294, 220);
             this.HighHumidity.Multiline = true;
             this.HighHumidity.Name = "HighHumidity";
             this.HighHumidity.Size = new System.Drawing.Size(58, 42);
@@ -113,41 +109,17 @@
             this.HighHumidity.Text = "0";
             this.HighHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // HighTemperature
-            // 
-            this.HighTemperature.BackColor = System.Drawing.SystemColors.Control;
-            this.HighTemperature.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.HighTemperature.Location = new System.Drawing.Point(290, 220);
-            this.HighTemperature.Multiline = true;
-            this.HighTemperature.Name = "HighTemperature";
-            this.HighTemperature.Size = new System.Drawing.Size(58, 42);
-            this.HighTemperature.TabIndex = 26;
-            this.HighTemperature.Text = "0";
-            this.HighTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // LowHumidity
             // 
             this.LowHumidity.BackColor = System.Drawing.SystemColors.Control;
             this.LowHumidity.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LowHumidity.Location = new System.Drawing.Point(152, 271);
+            this.LowHumidity.Location = new System.Drawing.Point(150, 220);
             this.LowHumidity.Multiline = true;
             this.LowHumidity.Name = "LowHumidity";
             this.LowHumidity.Size = new System.Drawing.Size(58, 42);
             this.LowHumidity.TabIndex = 27;
             this.LowHumidity.Text = "0";
             this.LowHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // LowTemperature
-            // 
-            this.LowTemperature.BackColor = System.Drawing.SystemColors.Control;
-            this.LowTemperature.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LowTemperature.Location = new System.Drawing.Point(152, 220);
-            this.LowTemperature.Multiline = true;
-            this.LowTemperature.Name = "LowTemperature";
-            this.LowTemperature.Size = new System.Drawing.Size(58, 42);
-            this.LowTemperature.TabIndex = 28;
-            this.LowTemperature.Text = "0";
-            this.LowTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StopHH
             // 
@@ -194,20 +166,11 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(48, 265);
+            this.pictureBox5.Location = new System.Drawing.Point(48, 214);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(673, 50);
             this.pictureBox5.TabIndex = 15;
             this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(48, 215);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -237,15 +200,12 @@
             this.Controls.Add(this.StopMM);
             this.Controls.Add(this.StartMM);
             this.Controls.Add(this.HighHumidity);
-            this.Controls.Add(this.HighTemperature);
             this.Controls.Add(this.LowHumidity);
-            this.Controls.Add(this.LowTemperature);
             this.Controls.Add(this.StopHH);
             this.Controls.Add(this.StartHH);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucPanel_Humi";
@@ -254,7 +214,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -269,15 +228,12 @@
         private System.Windows.Forms.TextBox StopMM;
         private System.Windows.Forms.TextBox StartMM;
         private System.Windows.Forms.TextBox HighHumidity;
-        private System.Windows.Forms.TextBox HighTemperature;
         private System.Windows.Forms.TextBox LowHumidity;
-        private System.Windows.Forms.TextBox LowTemperature;
         private System.Windows.Forms.TextBox StopHH;
         private System.Windows.Forms.TextBox StartHH;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

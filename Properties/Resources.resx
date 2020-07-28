@@ -298,40 +298,40 @@
   <data name="se_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\se_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-08적용" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="apply" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-08적용.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28Fan_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="fan_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28Fan_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28가습기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="humin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28가습기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28가습기_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="humin_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28가습기_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28닫기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28닫기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28닫기push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="close_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28닫기push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28적용push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="apply_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28적용push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28펌프" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pump" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28펌프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28펌프_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pump_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28펌프_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="heater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28히터_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="heater_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28히터_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
