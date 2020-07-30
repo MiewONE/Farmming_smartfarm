@@ -706,6 +706,7 @@
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.pb_auto);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pb_logo);
             this.Controls.Add(this.pb_title);
@@ -713,7 +714,6 @@
             this.Controls.Add(this.pl_heater);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pb_auto);
             this.Controls.Add(this.pb_mode);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pb_help);

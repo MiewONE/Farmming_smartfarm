@@ -184,10 +184,10 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::smartfarm.Properties.Resources.tempManual;
             this.pictureBox3.Location = new System.Drawing.Point(48, 22);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(149, 35);
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
             // 

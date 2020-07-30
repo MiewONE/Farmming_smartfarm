@@ -118,220 +118,241 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="home_3_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_3_white.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가습기_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\가습기_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="히터_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\히터_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가습기" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\가습기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="수동1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\수동1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="적용push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\적용push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="led_2_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\led_2_black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_on_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\icons\btn_on_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="닫기Push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\닫기Push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="farmmin1sg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\farmmin1sg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펌프_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\펌프_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="습도표시last" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\습도표시last.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="물음표" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\물음표.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_off_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\icons\btn_off_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mode_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mode_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펜" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\펜.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="습도_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\습도_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="히터_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\히터_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가습기_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\가습기_ON.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="적용1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\적용1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="수동" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\수동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="자동1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\자동1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="title2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\title.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Fan_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\Fan_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="환경설정1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\환경설정1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UI_settingclose" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UI_settingclose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가습기_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\가습기_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="온도_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\온도_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="UI_apply_ver4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\UI_apply_ver4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펌프" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\펌프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="히터_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\히터_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="자동" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\자동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="farmmin1sg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\farmmin1sg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="히터_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\히터_OFF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가습기1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\가습기1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펌프_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\펌프_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펌프_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\펌프_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="운전모드" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\운전모드.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="수동On_자동Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\수동On_자동Off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="온도표시" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\온도표시.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펜_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\펜_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="정지시간1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\정지시간1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="가동시간1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\가동시간1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="환경설정" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\환경설정.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circulation_BT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circulation_BT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="white_led" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\white_led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="수동Off_자동On" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\수동Off_자동On.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="평상시" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\평상시.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="습도_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\습도_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="온도_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\New_UI\온도_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="se_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\se_1_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="닫기" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\닫기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="se_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\se_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2020-07-08적용" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-08적용.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2020-07-28Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2020-07-28Fan_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28Fan_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2020-07-28가습기" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28가습기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2020-07-28가습기_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28가습기_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28닫기" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28닫기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="펌프_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\펌프_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28닫기push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28닫기push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home_3_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_3_white.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28적용push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28적용push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2020-07-28가습기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28가습기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28펌프" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28펌프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="평상시" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\평상시.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="온도_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\온도_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fan_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\Fan_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_on_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\btn_on_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="펜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\펜.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="온도표시" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\온도표시.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="수동Off_자동On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\수동Off_자동On.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white_led" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white_led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2020-07-28펌프_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28펌프_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2020-07-28히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\2020-07-28히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FanManual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\FanManual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28적용push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28적용push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가동시간1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\가동시간1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28Fan_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28Fan_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="습도_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\습도_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가습기1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\가습기1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeaterManual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HeaterManual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="온도_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\온도_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가습기_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\가습기_ON.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="닫기Push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\닫기Push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="정지시간1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\정지시간1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28닫기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28닫기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="히터_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\히터_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farmmin1sg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\farmmin1sg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_off_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\btn_off_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="히터_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\히터_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UI_settingclose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UI_settingclose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="펌프_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\펌프_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가습기_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\가습기_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="수동1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\수동1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="펌프" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\펌프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="펜_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\펜_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가습기" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\가습기.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="습도표시last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\습도표시last.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumiManual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HumiManual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="운전모드" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\운전모드.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-08적용" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-08적용.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="수동" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\수동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2020-07-28히터_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28히터_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="자동" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\자동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UI_apply_ver4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UI_apply_ver4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="적용push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\적용push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="물음표" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\물음표.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="수동On_자동Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\수동On_자동Off.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="펌프_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\펌프_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="적용1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\적용1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumiAuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HumiAuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tempManual" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\tempManual.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="히터_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\히터_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ON버튼" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\ON버튼.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="se_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="se_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se_1_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="습도_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\습도_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="가습기_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\가습기_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="환경설정1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\환경설정1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mode_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mode_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farmmin1sg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farmmin1sg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="led_2_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\led_2_black.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circulation_BT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circulation_BT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="히터_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\New_UI\히터_OFF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28펌프" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28펌프.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="자동1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\자동1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28닫기push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28닫기push.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="환경설정" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\환경설정.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2020-07-28히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\2020-07-28히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HeaterAuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HeaterAuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

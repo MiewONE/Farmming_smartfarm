@@ -175,19 +175,19 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Image = global::smartfarm.Properties.Resources.HeaterAuto;
             this.pictureBox6.Location = new System.Drawing.Point(48, 179);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 35);
+            this.pictureBox6.Size = new System.Drawing.Size(149, 35);
             this.pictureBox6.TabIndex = 35;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::smartfarm.Properties.Resources.HeaterManual;
             this.pictureBox3.Location = new System.Drawing.Point(48, 22);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(149, 35);
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
             // 

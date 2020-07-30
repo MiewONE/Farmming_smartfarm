@@ -367,5 +367,59 @@
   <ItemGroup>
     <None Include="UI\Setting_ui\환경설정1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-08적용.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28Fan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28Fan_Bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28가습기.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28가습기_Bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28닫기.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28닫기push.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28적용push.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28펌프.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28펌프_Bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28히터.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\2020-07-28히터_Bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\tempManual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\HumiManual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\HumiAuto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\FanManual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\HeaterManual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\HeaterAuto.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
