@@ -38,8 +38,10 @@
 ## SW , HW 구성
     + 하드웨어 구성
 <img src="https://user-images.githubusercontent.com/51110811/85028459-0e483980-b1b6-11ea-9ba2-9e8d68375f86.jpg" height="300px" title="캐드 도면" alt="RubberDuck"></img><br/>
-<img src="https://raw.githubusercontent.com/MiewONE/Farmming_smartfarm/master/UI/UI_background_ver4.JPG" height="300px" title="하드웨어 구성도" alt="RubberDuck"></img><br/>
-
+<img src="https://github.com/MiewONE/Farmming_smartfarm/blob/Son/Design/HwDesign.png" height="300px" title="하드웨어 구성도" >
+</img><br/>
+<img src="https://github.com/MiewONE/Farmming_smartfarm/blob/Son/Design/Hw.jpg" height="300px" title="하드웨어 구성도">
+</img><br/>
     + 소프트웨어 구성
 
 ## 목표일정
