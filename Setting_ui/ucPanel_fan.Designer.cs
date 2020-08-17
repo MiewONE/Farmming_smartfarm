@@ -29,121 +29,118 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPanel_fan));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.txtStartHH = new System.Windows.Forms.TextBox();
-            this.StartMM = new System.Windows.Forms.TextBox();
-            this.StartSS = new System.Windows.Forms.TextBox();
-            this.StopHH = new System.Windows.Forms.TextBox();
-            this.StopMM = new System.Windows.Forms.TextBox();
             this.StopSS = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.StartSS = new System.Windows.Forms.TextBox();
+            this.StopMM = new System.Windows.Forms.TextBox();
+            this.StartMM = new System.Windows.Forms.TextBox();
+            this.StopHH = new System.Windows.Forms.TextBox();
+            this.StartHH = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(79, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(79, 185);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(79, 99);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // txtStartHH
-            // 
-            this.txtStartHH.BackColor = System.Drawing.SystemColors.Control;
-            this.txtStartHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtStartHH.Location = new System.Drawing.Point(241, 140);
-            this.txtStartHH.Multiline = true;
-            this.txtStartHH.Name = "txtStartHH";
-            this.txtStartHH.Size = new System.Drawing.Size(58, 42);
-            this.txtStartHH.TabIndex = 14;
-            this.txtStartHH.Text = "0";
-            this.txtStartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StartMM
-            // 
-            this.StartMM.BackColor = System.Drawing.SystemColors.Control;
-            this.StartMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartMM.Location = new System.Drawing.Point(356, 140);
-            this.StartMM.Multiline = true;
-            this.StartMM.Name = "StartMM";
-            this.StartMM.Size = new System.Drawing.Size(58, 42);
-            this.StartMM.TabIndex = 14;
-            this.StartMM.Text = "0";
-            this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StartSS
-            // 
-            this.StartSS.BackColor = System.Drawing.SystemColors.Control;
-            this.StartSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartSS.Location = new System.Drawing.Point(467, 140);
-            this.StartSS.Multiline = true;
-            this.StartSS.Name = "StartSS";
-            this.StartSS.Size = new System.Drawing.Size(58, 42);
-            this.StartSS.TabIndex = 14;
-            this.StartSS.Text = "0";
-            this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StopHH
-            // 
-            this.StopHH.BackColor = System.Drawing.SystemColors.Control;
-            this.StopHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopHH.Location = new System.Drawing.Point(241, 191);
-            this.StopHH.Multiline = true;
-            this.StopHH.Name = "StopHH";
-            this.StopHH.Size = new System.Drawing.Size(58, 42);
-            this.StopHH.TabIndex = 14;
-            this.StopHH.Text = "0";
-            this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StopMM
-            // 
-            this.StopMM.BackColor = System.Drawing.SystemColors.Control;
-            this.StopMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopMM.Location = new System.Drawing.Point(356, 191);
-            this.StopMM.Multiline = true;
-            this.StopMM.Name = "StopMM";
-            this.StopMM.Size = new System.Drawing.Size(58, 42);
-            this.StopMM.TabIndex = 14;
-            this.StopMM.Text = "0";
-            this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StopSS
             // 
             this.StopSS.BackColor = System.Drawing.SystemColors.Control;
             this.StopSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopSS.Location = new System.Drawing.Point(467, 191);
+            this.StopSS.Location = new System.Drawing.Point(452, 191);
             this.StopSS.Multiline = true;
             this.StopSS.Name = "StopSS";
             this.StopSS.Size = new System.Drawing.Size(58, 42);
-            this.StopSS.TabIndex = 14;
+            this.StopSS.TabIndex = 34;
             this.StopSS.Text = "0";
             this.StopSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // StartSS
+            // 
+            this.StartSS.BackColor = System.Drawing.SystemColors.Control;
+            this.StartSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.StartSS.Location = new System.Drawing.Point(452, 140);
+            this.StartSS.Multiline = true;
+            this.StartSS.Name = "StartSS";
+            this.StartSS.Size = new System.Drawing.Size(58, 42);
+            this.StartSS.TabIndex = 35;
+            this.StartSS.Text = "0";
+            this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // StopMM
+            // 
+            this.StopMM.BackColor = System.Drawing.SystemColors.Control;
+            this.StopMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.StopMM.Location = new System.Drawing.Point(341, 191);
+            this.StopMM.Multiline = true;
+            this.StopMM.Name = "StopMM";
+            this.StopMM.Size = new System.Drawing.Size(58, 42);
+            this.StopMM.TabIndex = 36;
+            this.StopMM.Text = "0";
+            this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // StartMM
+            // 
+            this.StartMM.BackColor = System.Drawing.SystemColors.Control;
+            this.StartMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.StartMM.Location = new System.Drawing.Point(341, 140);
+            this.StartMM.Multiline = true;
+            this.StartMM.Name = "StartMM";
+            this.StartMM.Size = new System.Drawing.Size(58, 42);
+            this.StartMM.TabIndex = 37;
+            this.StartMM.Text = "0";
+            this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // StopHH
+            // 
+            this.StopHH.BackColor = System.Drawing.SystemColors.Control;
+            this.StopHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.StopHH.Location = new System.Drawing.Point(226, 191);
+            this.StopHH.Multiline = true;
+            this.StopHH.Name = "StopHH";
+            this.StopHH.Size = new System.Drawing.Size(58, 42);
+            this.StopHH.TabIndex = 38;
+            this.StopHH.Text = "0";
+            this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // StartHH
+            // 
+            this.StartHH.BackColor = System.Drawing.SystemColors.Control;
+            this.StartHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.StartHH.Location = new System.Drawing.Point(226, 140);
+            this.StartHH.Multiline = true;
+            this.StartHH.Name = "StartHH";
+            this.StartHH.Size = new System.Drawing.Size(58, 42);
+            this.StartHH.TabIndex = 39;
+            this.StartHH.Text = "0";
+            this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(64, 99);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
+            this.pictureBox3.TabIndex = 33;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(64, 185);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(673, 50);
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(64, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(673, 50);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
             // 
             // ucPanel_fan
             // 
@@ -154,15 +151,15 @@
             this.Controls.Add(this.StopMM);
             this.Controls.Add(this.StartMM);
             this.Controls.Add(this.StopHH);
-            this.Controls.Add(this.txtStartHH);
+            this.Controls.Add(this.StartHH);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucPanel_fan";
             this.Size = new System.Drawing.Size(800, 335);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,14 +167,14 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox txtStartHH;
-        private System.Windows.Forms.TextBox StartMM;
-        private System.Windows.Forms.TextBox StartSS;
-        private System.Windows.Forms.TextBox StopHH;
-        private System.Windows.Forms.TextBox StopMM;
         private System.Windows.Forms.TextBox StopSS;
+        private System.Windows.Forms.TextBox StartSS;
+        private System.Windows.Forms.TextBox StopMM;
+        private System.Windows.Forms.TextBox StartMM;
+        private System.Windows.Forms.TextBox StopHH;
+        private System.Windows.Forms.TextBox StartHH;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

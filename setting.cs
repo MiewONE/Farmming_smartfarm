@@ -132,13 +132,14 @@ namespace smartfarm
 
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
-            pictureBox2.Image = Resources.적용1;
+            pictureBox2.Image = Resources.apply;
             //db 신호
+            
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            pictureBox2.Image = Resources.적용push;
+            pictureBox2.Image = Resources.apply_push;
         }
 
         private void Se_Fan_MouseUp(object sender, MouseEventArgs e)
@@ -160,6 +161,53 @@ namespace smartfarm
             Se_Humi.Image = Resources.humin_bar;
             Se_Fan.Image = Resources.fan_bar;
             Se_Temp.Image = Resources.heater_bar;
+        }
+
+        private void Se_Humi_MouseDown(object sender, MouseEventArgs e)
+        {
+            Se_Water.Image = Resources.pump_bar;
+            Se_Humi.Image = Resources.humin_bar;
+            Se_Fan.Image = Resources.fan_bar;
+            Se_Temp.Image = Resources.heater_bar;
+        }
+
+        private void Se_Humi_MouseUp(object sender, MouseEventArgs e)
+        {
+            Se_Humi.Image = Resources.humin;
+            if (!pl_UIback.Controls.Contains(ucPanel_Humi.instance))
+            {
+                pl_UIback.Controls.Add(ucPanel_Humi.instance);
+                ucPanel_Humi.instance.Dock = DockStyle.Fill;
+                ucPanel_Humi.instance.BringToFront();
+            }
+            else
+                ucPanel_Humi.instance.BringToFront();
+        }
+
+        private void Se_Temp_MouseDown(object sender, MouseEventArgs e)
+        {
+            Se_Water.Image = Resources.pump_bar;
+            Se_Humi.Image = Resources.humin_bar;
+            Se_Fan.Image = Resources.fan_bar;
+            Se_Temp.Image = Resources.heater_bar;
+        }
+
+        private void Se_Temp_MouseUp(object sender, MouseEventArgs e)
+        {
+            Se_Temp.Image = Resources.heater;
+            if (!pl_UIback.Controls.Contains(ucPanel_temp.instance))
+            {
+                pl_UIback.Controls.Add(ucPanel_temp.instance);
+                ucPanel_temp.instance.Dock = DockStyle.Fill;
+                ucPanel_temp.instance.BringToFront();
+            }
+            else
+                ucPanel_temp.instance.BringToFront();
+        }
+
+        private void setting_Load(object sender, EventArgs e)
+        {
+            //DB.Instance.query_execute("select * from setting", "select");
         }
     }
 }

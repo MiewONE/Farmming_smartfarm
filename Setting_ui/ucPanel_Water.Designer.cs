@@ -47,11 +47,11 @@
             // 
             this.StopSS.BackColor = System.Drawing.SystemColors.Control;
             this.StopSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopSS.Location = new System.Drawing.Point(470, 184);
+            this.StopSS.Location = new System.Drawing.Point(452, 191);
             this.StopSS.Multiline = true;
             this.StopSS.Name = "StopSS";
             this.StopSS.Size = new System.Drawing.Size(58, 42);
-            this.StopSS.TabIndex = 37;
+            this.StopSS.TabIndex = 34;
             this.StopSS.Text = "0";
             this.StopSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -59,11 +59,11 @@
             // 
             this.StartSS.BackColor = System.Drawing.SystemColors.Control;
             this.StartSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartSS.Location = new System.Drawing.Point(470, 133);
+            this.StartSS.Location = new System.Drawing.Point(452, 140);
             this.StartSS.Multiline = true;
             this.StartSS.Name = "StartSS";
             this.StartSS.Size = new System.Drawing.Size(58, 42);
-            this.StartSS.TabIndex = 38;
+            this.StartSS.TabIndex = 35;
             this.StartSS.Text = "0";
             this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -71,11 +71,11 @@
             // 
             this.StopMM.BackColor = System.Drawing.SystemColors.Control;
             this.StopMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopMM.Location = new System.Drawing.Point(359, 184);
+            this.StopMM.Location = new System.Drawing.Point(341, 191);
             this.StopMM.Multiline = true;
             this.StopMM.Name = "StopMM";
             this.StopMM.Size = new System.Drawing.Size(58, 42);
-            this.StopMM.TabIndex = 39;
+            this.StopMM.TabIndex = 36;
             this.StopMM.Text = "0";
             this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -83,11 +83,11 @@
             // 
             this.StartMM.BackColor = System.Drawing.SystemColors.Control;
             this.StartMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartMM.Location = new System.Drawing.Point(359, 133);
+            this.StartMM.Location = new System.Drawing.Point(341, 140);
             this.StartMM.Multiline = true;
             this.StartMM.Name = "StartMM";
             this.StartMM.Size = new System.Drawing.Size(58, 42);
-            this.StartMM.TabIndex = 40;
+            this.StartMM.TabIndex = 37;
             this.StartMM.Text = "0";
             this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -95,11 +95,11 @@
             // 
             this.StopHH.BackColor = System.Drawing.SystemColors.Control;
             this.StopHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopHH.Location = new System.Drawing.Point(244, 184);
+            this.StopHH.Location = new System.Drawing.Point(226, 191);
             this.StopHH.Multiline = true;
             this.StopHH.Name = "StopHH";
             this.StopHH.Size = new System.Drawing.Size(58, 42);
-            this.StopHH.TabIndex = 45;
+            this.StopHH.TabIndex = 38;
             this.StopHH.Text = "0";
             this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -107,39 +107,39 @@
             // 
             this.StartHH.BackColor = System.Drawing.SystemColors.Control;
             this.StartHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartHH.Location = new System.Drawing.Point(244, 133);
+            this.StartHH.Location = new System.Drawing.Point(226, 140);
             this.StartHH.Multiline = true;
             this.StartHH.Name = "StartHH";
             this.StartHH.Size = new System.Drawing.Size(58, 42);
-            this.StartHH.TabIndex = 46;
+            this.StartHH.TabIndex = 39;
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(82, 92);
+            this.pictureBox3.Location = new System.Drawing.Point(64, 99);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 35);
-            this.pictureBox3.TabIndex = 36;
+            this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(82, 178);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 185);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox2.TabIndex = 33;
+            this.pictureBox2.TabIndex = 31;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(82, 128);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 135);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
             // ucPanel_Water

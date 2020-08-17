@@ -42,6 +42,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Selectbox = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -60,6 +61,8 @@
             this.StopSS.TabIndex = 21;
             this.StopSS.Text = "0";
             this.StopSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopSS.Click += new System.EventHandler(this.StopSS_Click);
+            this.StopSS.TextChanged += new System.EventHandler(this.StopSS_TextChanged);
             // 
             // StartSS
             // 
@@ -72,6 +75,8 @@
             this.StartSS.TabIndex = 22;
             this.StartSS.Text = "0";
             this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartSS.Click += new System.EventHandler(this.StartSS_Click);
+            this.StartSS.TextChanged += new System.EventHandler(this.StartSS_TextChanged);
             // 
             // StopMM
             // 
@@ -84,6 +89,8 @@
             this.StopMM.TabIndex = 23;
             this.StopMM.Text = "0";
             this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopMM.Click += new System.EventHandler(this.StopMM_Click);
+            this.StopMM.TextChanged += new System.EventHandler(this.StopMM_TextChanged);
             // 
             // StartMM
             // 
@@ -96,6 +103,8 @@
             this.StartMM.TabIndex = 24;
             this.StartMM.Text = "0";
             this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartMM.Click += new System.EventHandler(this.StartMM_Click);
+            this.StartMM.TextChanged += new System.EventHandler(this.StartMM_TextChanged);
             // 
             // HighHumidity
             // 
@@ -108,6 +117,8 @@
             this.HighHumidity.TabIndex = 25;
             this.HighHumidity.Text = "0";
             this.HighHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HighHumidity.Click += new System.EventHandler(this.HighHumidity_Click);
+            this.HighHumidity.TextChanged += new System.EventHandler(this.HighHumidity_TextChanged);
             // 
             // LowHumidity
             // 
@@ -120,6 +131,8 @@
             this.LowHumidity.TabIndex = 27;
             this.LowHumidity.Text = "0";
             this.LowHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LowHumidity.Click += new System.EventHandler(this.LowHumidity_Click);
+            this.LowHumidity.TextChanged += new System.EventHandler(this.LowHumidity_TextChanged);
             // 
             // StopHH
             // 
@@ -132,6 +145,8 @@
             this.StopHH.TabIndex = 29;
             this.StopHH.Text = "0";
             this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopHH.Click += new System.EventHandler(this.StopHH_Click);
+            this.StopHH.TextChanged += new System.EventHandler(this.StopHH_TextChanged);
             // 
             // StartHH
             // 
@@ -144,6 +159,8 @@
             this.StartHH.TabIndex = 30;
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
+            this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
             // 
             // pictureBox6
             // 
@@ -190,11 +207,24 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // Selectbox
+            // 
+            this.Selectbox.Font = new System.Drawing.Font("굴림", 30F);
+            this.Selectbox.FormattingEnabled = true;
+            this.Selectbox.ItemHeight = 40;
+            this.Selectbox.Location = new System.Drawing.Point(706, 282);
+            this.Selectbox.MultiColumn = true;
+            this.Selectbox.Name = "Selectbox";
+            this.Selectbox.Size = new System.Drawing.Size(68, 4);
+            this.Selectbox.TabIndex = 31;
+            this.Selectbox.Click += new System.EventHandler(this.Selectbox_Click);
+            // 
             // ucPanel_Humi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.Selectbox);
             this.Controls.Add(this.StopSS);
             this.Controls.Add(this.StartSS);
             this.Controls.Add(this.StopMM);
@@ -236,5 +266,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox Selectbox;
     }
 }

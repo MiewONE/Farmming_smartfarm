@@ -92,13 +92,16 @@ namespace smartfarm
 
         private void frm_Main_Load(object sender, EventArgs e)
         {
+            DB.Instance.DBcon();
+            DB.Instance.DBorTable_Create();
+            DB.Instance.query_execute("select * from setting;", "select");
             //_buttons = new Dictionary<bool, PictureBox>();
-            //_buttons.Add(GPIO.Output17.IsOn, pb_temp);
-            //_buttons.Add(GPIO.Output18.IsOn, pb_humi);
-            //_buttons.Add(GPIO.Output19.IsOn, pb_pump);
-            //_buttons.Add(GPIO.Output20.IsOn, pb_fan);
+            //_buttons.Add(//GPIO.Output17.IsOn, pb_temp);
+            //_buttons.Add(//GPIO.Output18.IsOn, pb_humi);
+            //_buttons.Add(//GPIO.Output19.IsOn, pb_pump);
+            //_buttons.Add(//GPIO.Output20.IsOn, pb_fan);
 
-            //foreach(var off in GPIO.Outputs)
+            //foreach(var off in //GPIO.Outputs)
             //{
             //    off.IsOn = false;
             //}
@@ -124,9 +127,7 @@ namespace smartfarm
             if (variable.instance.pump  ) pb_pump.Image = Resources.btn_on; else pb_pump.Image = Resources.btn_off;
 
             worker.RunWorkerAsync();
-            //DB.Instance.DBcon();
-            //DB.Instance.DBorTable_Create();
-            //DB.Instance.query_execute("select * from setting;", "select");
+            
         }
          
         private void pb_setting_MouseDown(object sender, MouseEventArgs e)
@@ -164,12 +165,12 @@ namespace smartfarm
             if (variable.instance.humin)
             {
                 pb_humi.Image = Resources.btn_off;
-                GPIO.Output19.IsOn = false;
+                //GPIO.Output19.IsOn = false;
             }
             else
             {
                 pb_humi.Image = Resources.btn_on;
-                GPIO.Output19.IsOn = true;
+                //GPIO.Output19.IsOn = true;
             }
             variable.instance.humin = !variable.instance.humin;
             
