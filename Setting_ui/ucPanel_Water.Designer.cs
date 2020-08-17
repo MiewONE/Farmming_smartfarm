@@ -193,7 +193,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::smartfarm.Properties.Resources.습도표시last;
+            this.pictureBox5.Image = global::smartfarm.Properties.Resources.HumiSetting;
             this.pictureBox5.Location = new System.Drawing.Point(48, 265);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(673, 50);

@@ -142,14 +142,11 @@
   <data name="Fan_lostbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\Fan_lostbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_on_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\icons\btn_on_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="펜" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\펜.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="2020-07-28Fan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28Fan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="펜" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\펜.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="온도표시" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\온도표시.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,6 +159,9 @@
   </data>
   <data name="white_led" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white_led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_on_mouseDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\icons\btn_on_mouseDown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,6 +226,9 @@
   <data name="히터_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\히터_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HeaterAuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HeaterAuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="UI_settingclose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\UI_settingclose.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -258,9 +261,6 @@
   </data>
   <data name="2020-07-08적용" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-08적용.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="수동" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\New_UI\수동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,6 +298,9 @@
   <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mode_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mode_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="히터_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\히터_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -319,8 +322,8 @@
   <data name="환경설정1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\환경설정1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mode_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mode_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="111" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,7 +355,7 @@
   <data name="2020-07-28히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HeaterAuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\UI\Setting_ui\HeaterAuto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="HumiSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HumiSetting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
