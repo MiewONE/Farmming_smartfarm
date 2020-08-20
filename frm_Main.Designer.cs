@@ -60,7 +60,7 @@
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lb_temp = new System.Windows.Forms.Label();
             this.pl_fan = new System.Windows.Forms.Panel();
             this.plin_fan = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -460,17 +460,17 @@
             this.label6.Text = "실내 습도";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lb_temp
             // 
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            this.label8.Font = new System.Drawing.Font("굴림", 21F);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(123, 45);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 33);
-            this.label8.TabIndex = 85;
-            this.label8.Text = "32.5°C";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_temp.BackColor = System.Drawing.SystemColors.Control;
+            this.lb_temp.Font = new System.Drawing.Font("굴림", 21F);
+            this.lb_temp.ForeColor = System.Drawing.Color.Black;
+            this.lb_temp.Location = new System.Drawing.Point(123, 45);
+            this.lb_temp.Name = "lb_temp";
+            this.lb_temp.Size = new System.Drawing.Size(126, 33);
+            this.lb_temp.TabIndex = 85;
+            this.lb_temp.Text = "32.5°C";
+            this.lb_temp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pl_fan
             // 
@@ -562,7 +562,7 @@
             this.pl_temp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_temp.Controls.Add(this.pictureBox23);
             this.pl_temp.Controls.Add(this.pictureBox22);
-            this.pl_temp.Controls.Add(this.label8);
+            this.pl_temp.Controls.Add(this.lb_temp);
             this.pl_temp.Controls.Add(this.label7);
             this.pl_temp.Location = new System.Drawing.Point(2, 220);
             this.pl_temp.Name = "pl_temp";
@@ -820,7 +820,7 @@
         private System.Windows.Forms.Panel pl_inhumi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_temp;
         private System.Windows.Forms.Panel pl_fan;
         private System.Windows.Forms.Panel plin_fan;
         private System.Windows.Forms.Panel panel6;

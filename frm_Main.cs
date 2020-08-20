@@ -5,12 +5,16 @@ using smartfarm.Properties;
 using Comfile.ComfilePi;
 using System.Collections.Generic;
 using System.ComponentModel;
-
+using System.Timers;
+using System.IO;
+using System.IO.Ports;
 namespace smartfarm
 {
     public partial class frm_Main : Form
     {
-        private BackgroundWorker worker;
+        
+        SerialPort port;
+        SerialDataReceivedEventHandler handler;
         public frm_Main()
         {
             InitializeComponent();
@@ -39,41 +43,52 @@ namespace smartfarm
             this.Size = new Size(800, 480);
 
             //worker 백그라운드
-            worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
-            worker.WorkerSupportsCancellation = true;
-            worker.DoWork += new DoWorkEventHandler(worker_DoWork);
-            worker.ProgressChanged += new ProgressChangedEventHandler(worker_ProgressChanged);
-            worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(worker_RunWorkerCompleted);
+            //worker = new BackgroundWorker();
+            //worker.WorkerReportsProgress = true;
+            //worker.WorkerSupportsCancellation = true;
+            //worker.DoWork += new DoWorkEventHandler(worker_DoWork);
+            //worker.ProgressChanged += new ProgressChangedEventHandler(worker_ProgressChanged);
+            //worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(worker_RunWorkerCompleted);
+
+            //timer
+            var TmpTimer = new System.Timers.Timer();
+            TmpTimer.Interval = 1000 * 20;
+            TmpTimer.Elapsed += new ElapsedEventHandler(TmpTimer_Elapsed);
+            TmpTimer.Start();
         }
 
         #region 백그라운드 
-        void worker_DoWork(object sender, DoWorkEventArgs e)
-        {
+        //void worker_DoWork(object sender, DoWorkEventArgs e)
+        //{
             
-        }
+        //}
 
-        // Progress 리포트 - UI Thread
-        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
+        //// Progress 리포트 - UI Thread
+        //void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        //{
             
-        }
+        //}
 
-        // 작업 완료 - UI Thread
-        void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        //// 작업 완료 - UI Thread
+        //void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        //{
+        //    // 에러가 있는지 체크
+        //    if (e.Error != null)
+        //    {
+        //        //lblMsg.Text = e.Error.Message;
+        //        MessageBox.Show(e.Error.Message, "Error");
+        //        return;
+        //    }
+
+        //    //lblMsg.Text = "성공적으로 완료되었습니다";
+        //}
+
+        void TmpTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            // 에러가 있는지 체크
-            if (e.Error != null)
-            {
-                //lblMsg.Text = e.Error.Message;
-                MessageBox.Show(e.Error.Message, "Error");
-                return;
-            }
-
-            //lblMsg.Text = "성공적으로 완료되었습니다";
+            variable.instance.temp_value = GPIO.ADC1.Read();
+            MessageBox.Show("온습도"+GPIO.ADC1.Read().ToString());
+            lb_temp.Text = variable.instance.temp_value.ToString();
         }
-
-
         #endregion
         private static DateTime Delay(int MS)
         {
@@ -126,7 +141,7 @@ namespace smartfarm
             if (variable.instance.fan   ) pb_fan.Image = Resources.btn_on; else pb_fan.Image = Resources.btn_off;
             if (variable.instance.pump  ) pb_pump.Image = Resources.btn_on; else pb_pump.Image = Resources.btn_off;
 
-            worker.RunWorkerAsync();
+            //worker.RunWorkerAsync();
             
         }
          

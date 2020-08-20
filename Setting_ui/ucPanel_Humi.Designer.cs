@@ -160,7 +160,10 @@
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
+            
             this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
+            
+            
             // 
             // pictureBox6
             // 
