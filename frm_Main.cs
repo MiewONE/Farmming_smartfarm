@@ -51,10 +51,11 @@ namespace smartfarm
             //worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(worker_RunWorkerCompleted);
 
             //timer
-            var TmpTimer = new System.Timers.Timer();
-            TmpTimer.Interval = 1000 * 20;
-            TmpTimer.Elapsed += new ElapsedEventHandler(TmpTimer_Elapsed);
-            TmpTimer.Start();
+            //var TmpTimer = new System.Timers.Timer();
+            //TmpTimer.Interval = 1000 * 20;
+            //TmpTimer.Elapsed += new ElapsedEventHandler(TmpTimer_Elapsed);
+            //TmpTimer.Start();
+            timer1.Start();
         }
 
         #region 백그라운드 
@@ -323,6 +324,21 @@ namespace smartfarm
                 pictureBox1.Image = Resources.수동Off_자동On;
             }
             variable.instance.Mode = !variable.instance.Mode;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            short tm = 0;
+            float tmF = 0;
+            tm = GPIO.ADC1.Read();
+            //tmF = (float)tm;
+
+            //tmF = (tmF / 26666 * 100) - 20;
+
+            variable.instance.temp_value = tm;
+            //variable.instance.temp_value = GPIO.ADC1.Read();
+            //MessageBox.Show("온습도" + GPIO.ADC1.Read().ToString());
+            lb_temp.Text = variable.instance.temp_value.ToString();
         }
     }
 }

@@ -21,7 +21,7 @@ namespace smartfarm
             }
         }
         //temp
-        public int? temp_value = 0;
+        public float? temp_value = 0;
         public int? temp_runTimeHH = 0;
         public int? temp_runTimeMM = 0;
         public int? temp_runTimeSS = 0;
@@ -31,7 +31,7 @@ namespace smartfarm
         public int? auto_TempLOW = 0;
         public int? auto_TempHIGH = 0;
         //humi
-        public int? humi_value = 0;
+        public float? humi_value = 0;
         public int? humi_runTimeHH = 0;
         public int? humi_runTimeMM = 0;
         public int? humi_runTimeSS = 0;

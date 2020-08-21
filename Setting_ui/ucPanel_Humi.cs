@@ -90,7 +90,7 @@ namespace smartfarm.Setting_ui
 
         private void StartHH_Click(object sender, EventArgs e)
         {
-            //setting_tbx(StartHH,0, 24);
+            setting_tbx(StartHH,0, 24);
             
         }
         private void StartMM_Click(object sender, EventArgs e)
