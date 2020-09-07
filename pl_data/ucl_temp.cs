@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using smartfarms;
 
 namespace smartfarm.pl_data
 {
@@ -41,6 +42,9 @@ namespace smartfarm.pl_data
 
             plot.AxisX.Minimum = dateTime[0].ToOADate();
             plot.AxisX.Maximum = dateTime[1].ToOADate();
+
+            plot.AxisY.Minimum = 0;
+            plot.AxisY.Maximum = 100;
         }
 
         private void btnZOOM_Click(object sender, EventArgs e)
@@ -82,6 +86,24 @@ namespace smartfarm.pl_data
                 plots.AxisX.LabelStyle.Format = "yyyy-MM-dd  HH:mm:ss";
             }
 
+        }
+
+        private void ucl_temp_Load(object sender, EventArgs e)
+        {
+            chart1.Series.Clear();
+            Series temperature = chart1.Series.Add("온도");
+            Series humidity = chart1.Series.Add("습도");
+
+            temperature.ChartType = SeriesChartType.Line;
+            humidity.ChartType = SeriesChartType.Line;
+
+            MySqlDataReader rd= DB.Instance.query_execute("select * from save_state;");
+
+            //for(double k=0;k<2*Math.PI;k+=0.1)
+            //{
+            //    temperature.Points.AddXY(k, Math.Sin(k));
+            //    humidity.Points.AddXY(k+0.5, Math.Sin(k));
+            //}
         }
     }
 }

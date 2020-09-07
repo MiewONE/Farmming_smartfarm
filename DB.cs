@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Management.Instrumentation;
 using System.Text;
@@ -41,14 +42,18 @@ namespace smartfarms
             con = new MySqlConnection(conString);
             con.Open();
         }
-        static public void query_execute(string _para_query)
+        public MySqlDataReader query_execute(string _para_query)
         {
             if (con.State == System.Data.ConnectionState.Closed) con.Open();
             cmd = new MySqlCommand(_para_query, con);
-            cmd.ExecuteNonQuery();
+            MySqlDataReader rd = cmd.ExecuteReader();
+            DataSet ds = rd.;
+            //cmd.ExecuteNonQuery();
             con.Close();
+
+            return rd;
         }
-        static private void Con_Open()
+        private void Con_Open()
         {
             if (con != null && con.State == System.Data.ConnectionState.Closed)
             {
@@ -229,10 +234,6 @@ namespace smartfarms
                 
                 con.Close();
             }
-        }
-        static void save_state()
-        {
-
         }
     }
 }
