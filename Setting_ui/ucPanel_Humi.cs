@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Org.BouncyCastle.Asn1.IsisMtt;
-using System.Linq.Expressions;
+
 
 namespace smartfarm.Setting_ui
 {

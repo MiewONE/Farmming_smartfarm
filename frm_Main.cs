@@ -8,6 +8,8 @@ using System.ComponentModel;
 using System.Timers;
 using System.IO;
 using System.IO.Ports;
+using smartfarms;
+
 namespace smartfarm
 {
     public partial class frm_Main : Form
@@ -328,17 +330,22 @@ namespace smartfarm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            short tm = 0;
-            float tmF = 0;
-            tm = GPIO.ADC1.Read();
-            //tmF = (float)tm;
+            //short tm = 0;
+            //float tmF = 0;
+            //tm = GPIO.ADC1.Read();
+            ////tmF = (float)tm;
 
-            //tmF = (tmF / 26666 * 100) - 20;
+            ////tmF = (tmF / 26666 * 100) - 20;
 
-            variable.instance.temp_value = tm;
-            //variable.instance.temp_value = GPIO.ADC1.Read();
-            //MessageBox.Show("온습도" + GPIO.ADC1.Read().ToString());
-            lb_temp.Text = variable.instance.temp_value.ToString();
+            //variable.instance.temp_value = tm;
+            ////variable.instance.temp_value = GPIO.ADC1.Read();
+            ////MessageBox.Show("온습도" + GPIO.ADC1.Read().ToString());
+            //lb_temp.Text = variable.instance.temp_value.ToString();
+        }
+
+        private void pb_graph_Click(object sender, EventArgs e)
+        {
+            data.instance.ShowDialog();
         }
     }
 }
