@@ -33,21 +33,17 @@
             this.StartSS = new System.Windows.Forms.TextBox();
             this.StopMM = new System.Windows.Forms.TextBox();
             this.StartMM = new System.Windows.Forms.TextBox();
-            this.HighHumidity = new System.Windows.Forms.TextBox();
             this.HighTemperature = new System.Windows.Forms.TextBox();
-            this.LowHumidity = new System.Windows.Forms.TextBox();
             this.LowTemperature = new System.Windows.Forms.TextBox();
             this.StopHH = new System.Windows.Forms.TextBox();
             this.StartHH = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,18 +97,6 @@
             this.StartMM.Text = "0";
             this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // HighHumidity
-            // 
-            this.HighHumidity.BackColor = System.Drawing.SystemColors.Control;
-            this.HighHumidity.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.HighHumidity.Location = new System.Drawing.Point(290, 271);
-            this.HighHumidity.Multiline = true;
-            this.HighHumidity.Name = "HighHumidity";
-            this.HighHumidity.Size = new System.Drawing.Size(58, 42);
-            this.HighHumidity.TabIndex = 41;
-            this.HighHumidity.Text = "0";
-            this.HighHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // HighTemperature
             // 
             this.HighTemperature.BackColor = System.Drawing.SystemColors.Control;
@@ -124,18 +108,6 @@
             this.HighTemperature.TabIndex = 42;
             this.HighTemperature.Text = "0";
             this.HighTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // LowHumidity
-            // 
-            this.LowHumidity.BackColor = System.Drawing.SystemColors.Control;
-            this.LowHumidity.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LowHumidity.Location = new System.Drawing.Point(152, 271);
-            this.LowHumidity.Multiline = true;
-            this.LowHumidity.Name = "LowHumidity";
-            this.LowHumidity.Size = new System.Drawing.Size(58, 42);
-            this.LowHumidity.TabIndex = 43;
-            this.LowHumidity.Text = "0";
-            this.LowHumidity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LowTemperature
             // 
@@ -175,30 +147,21 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::smartfarm.Properties.Resources.HeaterAuto;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(48, 179);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(149, 35);
+            this.pictureBox6.Size = new System.Drawing.Size(100, 35);
             this.pictureBox6.TabIndex = 35;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::smartfarm.Properties.Resources.HeaterManual;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(48, 22);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(149, 35);
+            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
             this.pictureBox3.TabIndex = 36;
             this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::smartfarm.Properties.Resources.HumiSetting;
-            this.pictureBox5.Location = new System.Drawing.Point(48, 265);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox5.TabIndex = 31;
-            this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -235,15 +198,12 @@
             this.Controls.Add(this.StartSS);
             this.Controls.Add(this.StopMM);
             this.Controls.Add(this.StartMM);
-            this.Controls.Add(this.HighHumidity);
             this.Controls.Add(this.HighTemperature);
-            this.Controls.Add(this.LowHumidity);
             this.Controls.Add(this.LowTemperature);
             this.Controls.Add(this.StopHH);
             this.Controls.Add(this.StartHH);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -251,7 +211,6 @@
             this.Size = new System.Drawing.Size(800, 335);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -266,15 +225,12 @@
         private System.Windows.Forms.TextBox StartSS;
         private System.Windows.Forms.TextBox StopMM;
         private System.Windows.Forms.TextBox StartMM;
-        private System.Windows.Forms.TextBox HighHumidity;
         private System.Windows.Forms.TextBox HighTemperature;
-        private System.Windows.Forms.TextBox LowHumidity;
         private System.Windows.Forms.TextBox LowTemperature;
         private System.Windows.Forms.TextBox StopHH;
         private System.Windows.Forms.TextBox StartHH;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;

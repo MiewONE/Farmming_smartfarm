@@ -73,9 +73,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_08적용 {
+        internal static System.Drawing.Bitmap apply {
             get {
-                object obj = ResourceManager.GetObject("2020-07-08적용", resourceCulture);
+                object obj = ResourceManager.GetObject("apply", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,109 +83,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28Fan {
+        internal static System.Drawing.Bitmap apply_push {
             get {
-                object obj = ResourceManager.GetObject("2020-07-28Fan", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28Fan_Bar {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28Fan_Bar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28가습기 {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28가습기", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28가습기_Bar {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28가습기_Bar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28닫기 {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28닫기", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28닫기push {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28닫기push", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28적용push {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28적용push", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28펌프 {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28펌프", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28펌프_Bar {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28펌프_Bar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28히터 {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28히터", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap _2020_07_28히터_Bar {
-            get {
-                object obj = ResourceManager.GetObject("2020-07-28히터_Bar", resourceCulture);
+                object obj = ResourceManager.GetObject("apply_push", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,9 +153,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap Fan_lostbar {
+        internal static System.Drawing.Bitmap close {
             get {
-                object obj = ResourceManager.GetObject("Fan_lostbar", resourceCulture);
+                object obj = ResourceManager.GetObject("close", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -263,9 +163,59 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap FanManual {
+        internal static System.Drawing.Bitmap close_push {
             get {
-                object obj = ResourceManager.GetObject("FanManual", resourceCulture);
+                object obj = ResourceManager.GetObject("close_push", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Data_operating_time {
+            get {
+                object obj = ResourceManager.GetObject("Data_operating time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Data_Temperature2 {
+            get {
+                object obj = ResourceManager.GetObject("Data_Temperature2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap fan {
+            get {
+                object obj = ResourceManager.GetObject("fan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap fan_bar {
+            get {
+                object obj = ResourceManager.GetObject("fan_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fan_lostbar {
+            get {
+                object obj = ResourceManager.GetObject("Fan_lostbar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,9 +243,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap HeaterAuto {
+        internal static System.Drawing.Bitmap graph {
             get {
-                object obj = ResourceManager.GetObject("HeaterAuto", resourceCulture);
+                object obj = ResourceManager.GetObject("graph", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +253,19 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap HeaterManual {
+        internal static System.Drawing.Bitmap heater {
             get {
-                object obj = ResourceManager.GetObject("HeaterManual", resourceCulture);
+                object obj = ResourceManager.GetObject("heater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap heater_bar {
+            get {
+                object obj = ResourceManager.GetObject("heater_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,9 +283,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap HumiAuto {
+        internal static System.Drawing.Bitmap humin {
             get {
-                object obj = ResourceManager.GetObject("HumiAuto", resourceCulture);
+                object obj = ResourceManager.GetObject("humin", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,19 +293,9 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap HumiManual {
+        internal static System.Drawing.Bitmap humin_bar {
             get {
-                object obj = ResourceManager.GetObject("HumiManual", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap HumiSetting {
-            get {
-                object obj = ResourceManager.GetObject("HumiSetting", resourceCulture);
+                object obj = ResourceManager.GetObject("humin_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,9 +323,19 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap ON버튼 {
+        internal static System.Drawing.Bitmap pump {
             get {
-                object obj = ResourceManager.GetObject("ON버튼", resourceCulture);
+                object obj = ResourceManager.GetObject("pump", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pump_bar {
+            get {
+                object obj = ResourceManager.GetObject("pump_bar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,16 +356,6 @@ namespace smartfarm.Properties {
         internal static System.Drawing.Bitmap se_1_2 {
             get {
                 object obj = ResourceManager.GetObject("se_1_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap tempManual {
-            get {
-                object obj = ResourceManager.GetObject("tempManual", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
