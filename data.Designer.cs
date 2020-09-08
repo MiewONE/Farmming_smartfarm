@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pl_graph = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pl_graph = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -48,16 +51,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 70);
+            this.panel1.Size = new System.Drawing.Size(800, 70);
             this.panel1.TabIndex = 0;
             // 
-            // pl_graph
+            // label3
             // 
-            this.pl_graph.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_graph.Location = new System.Drawing.Point(0, 70);
-            this.pl_graph.Name = "pl_graph";
-            this.pl_graph.Size = new System.Drawing.Size(784, 371);
-            this.pl_graph.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(127, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "작동로그";
             // 
             // label1
             // 
@@ -68,14 +72,24 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "온습도";
             // 
-            // label3
+            // pl_graph
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(127, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "작동여부";
+            this.pl_graph.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_graph.Location = new System.Drawing.Point(0, 70);
+            this.pl_graph.Name = "pl_graph";
+            this.pl_graph.Size = new System.Drawing.Size(800, 410);
+            this.pl_graph.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::smartfarm.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(676, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
             // 
             // pictureBox3
             // 
@@ -101,15 +115,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(784, 441);
+            this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.pl_graph);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "data";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "data";
+            this.Load += new System.EventHandler(this.data_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -124,5 +140,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pl_graph;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -330,6 +330,7 @@ namespace smartfarm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            //입력 데이터 디비에 넣고 디스플레이 출력
             //short tm = 0;
             //float tmF = 0;
             //tm = GPIO.ADC1.Read();
@@ -340,7 +341,9 @@ namespace smartfarm
             //variable.instance.temp_value = tm;
             ////variable.instance.temp_value = GPIO.ADC1.Read();
             ////MessageBox.Show("온습도" + GPIO.ADC1.Read().ToString());
-            //lb_temp.Text = variable.instance.temp_value.ToString();
+            //lb_temp.Text = variable.instance.temp_value.ToString() +"℃";
+            //lb_humi.Text = variable.instance.humi_value.ToString() + "%";
+            //DB.Instance.query_execute($"insert into save_state values({variable.instance.temp_value},{variable.instance.humi_value},{variable.instance.fan},{variable.instance.pump},now());");
         }
 
         private void pb_graph_Click(object sender, EventArgs e)

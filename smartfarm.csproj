@@ -408,5 +408,8 @@
   <ItemGroup>
     <None Include="Setting_ui\graph.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\HumiSetting.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

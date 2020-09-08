@@ -160,10 +160,7 @@
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
-            
             this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
-            
-            
             // 
             // pictureBox6
             // 
@@ -185,7 +182,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Image = global::smartfarm.Properties.Resources.HumiSetting;
             this.pictureBox5.Location = new System.Drawing.Point(48, 214);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(673, 50);

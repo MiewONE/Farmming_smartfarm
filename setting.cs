@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using smartfarm.Setting_ui;
 using smartfarm.Properties;
+using smartfarms;
+
 namespace smartfarm
 {
     public partial class setting : Form
@@ -133,9 +135,9 @@ namespace smartfarm
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox2.Image = Resources.apply;
-            //db 신호
-            //%%DB.Instance.query_execute("update setting set " +
-                //%%$"humi_runTimeHH = {variable.instance.humi_runTimeHH}");
+            //db 세팅 저장
+            DB.Instance.query_execute("update setting set " +
+                $"humi_runTimeHH = {variable.instance.humi_runTimeHH}","insert");
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)

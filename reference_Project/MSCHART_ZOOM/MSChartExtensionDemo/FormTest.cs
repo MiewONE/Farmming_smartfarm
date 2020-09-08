@@ -73,77 +73,77 @@ namespace MSChartExtensionDemo
         /// </summary>
         public void GraphGenerate(Chart grph)
         {
-            //String intFile = String.Format(@"{0}\{1}",System.Windows.Forms.Application.StartupPath,"Config.ini");
+            String intFile = String.Format(@"{0}\{1}",System.Windows.Forms.Application.StartupPath,"Config.ini");
            
-            ////String xtxt = ClassLibraryFile.IniDll.Readini("Test", "DateTime", DateTime.Now.ToString(), intFile);
+            String xtxt = ClassLibraryFile.IniDll.Readini("Test", "DateTime", DateTime.Now.ToString(), intFile);
 
             
-            ////ClassLibraryFile.IniDll.Writeini("Test", "DatCount", numCount.Value.ToString(), intFile);
-            ////String scnt = ClassLibraryFile.IniDll.Readini("Test", "DatCount", "3000", intFile);           
+            ClassLibraryFile.IniDll.Writeini("Test", "DatCount", numCount.Value.ToString(), intFile);
+            String scnt = ClassLibraryFile.IniDll.Readini("Test", "DatCount", "3000", intFile);           
 
-            //String item, key;
-            //#region Default Column and series
-            //Series[] sers = new Series[2];
-            /////////////////////////////////////////////////////
-            //listView.Clear();
-            //listView.Columns.Clear();
-            //listView.Columns.Add("Time", 180);
-            //listView.Columns.Add("sin", 100);
-            //listView.Columns.Add("cos", 100);
+            String item, key;
+            #region Default Column and series
+            Series[] sers = new Series[2];
+            ///////////////////////////////////////////////////
+            listView.Clear();
+            listView.Columns.Clear();
+            listView.Columns.Add("Time", 180);
+            listView.Columns.Add("sin", 100);
+            listView.Columns.Add("cos", 100);
 
-            //////////////////////////////////////
-            //grph.Series.Clear(); //default series를 청소한다.  
-            //sers[0] = grph.Series.Add("sin");
-            //sers[1] = grph.Series.Add("cos");
+            ////////////////////////////////////
+            grph.Series.Clear(); //default series를 청소한다.  
+            sers[0] = grph.Series.Add("sin");
+            sers[1] = grph.Series.Add("cos");
 
-            ////sers[0].XValueType = ChartValueType.DateTime;
-            //sers[0].ChartType = SeriesChartType.Line;
-            //sers[1].ChartType = SeriesChartType.Line;
-            //#endregion
+            //sers[0].XValueType = ChartValueType.DateTime;
+            sers[0].ChartType = SeriesChartType.Line;
+            sers[1].ChartType = SeriesChartType.Line;
+            #endregion
 
-            //DateTime[] dtx;
-            //double[][] DyArr = new double[2][];
-            //#region Data Generate
-            //////////////////////////////////////////////////////////
-            //// Make Data
-            //Random r = new Random();
-            //DateTime start = DateTime.Parse(xtxt);
-            //int cnt = int.Parse(scnt);
-            //dtx = new DateTime[cnt];
-            //DyArr[0] = new double[cnt];
-            //DyArr[1] = new double[cnt];
-            //for (int i = 0; i < cnt; i++)
-            //{
-            //    dtx[i] = start.AddMinutes(5*i);
-            //    DyArr[0][i] = Math.Sin(Math.PI * 0.1 * i)*r.Next(-1,100);
-            //    DyArr[1][i] = Math.Cos(Math.PI * 0.1 * i) * r.Next(-10, 50);
-            //}
-            //#endregion
-            //#region Draw Chart 
-            //sers[0].Points.DataBindXY(dtx, DyArr[0]);
-            //sers[1].Points.DataBindXY(dtx, DyArr[1]);
-            ///*for (int i = 0; i < cnt; i++)
-            //{
-            //    sers[0].Points.AddXY(dtx[i], DyArr[0][i]);
-            //    sers[1].Points.AddXY(dtx[i], DyArr[1][i]);
-            //} */
-            /////////////////////////////////////////
-            //datePickerS.Value = dtx[0];
-            //datePickerE.Value = dtx[cnt-1];
-            //TimePickerS.Value = dtx[0];
-            //TimePickerE.Value = dtx[cnt - 1];
-            /////////////////////////////////////////         
-            //#endregion
-            //#region List Draw         
-            //ListViewItem itm ;
-            //ListViewItem.ListViewSubItem sItm;          
-            //for (int i = 0; i < cnt; i++)
-            //{           
-            //    itm= listView.Items.Add(dtx[i].ToString("yyyy-MM-dd  HH:mm:ss"));
-            //    sItm = itm.SubItems.Add(String.Format("{0:f2}", DyArr[0][i]));
-            //    sItm = itm.SubItems.Add(String.Format("{0:f2}", DyArr[1][i]));
-            //}           
-            //#endregion         
+            DateTime[] dtx;
+            double[][] DyArr = new double[2][];
+            #region Data Generate
+            ////////////////////////////////////////////////////////
+            // Make Data
+            Random r = new Random();
+            DateTime start = DateTime.Parse(xtxt);
+            int cnt = int.Parse(scnt);
+            dtx = new DateTime[cnt];
+            DyArr[0] = new double[cnt];
+            DyArr[1] = new double[cnt];
+            for (int i = 0; i < cnt; i++)
+            {
+                dtx[i] = start.AddMinutes(5*i);
+                DyArr[0][i] = Math.Sin(Math.PI * 0.1 * i)*r.Next(-1,100);
+                DyArr[1][i] = Math.Cos(Math.PI * 0.1 * i) * r.Next(-10, 50);
+            }
+            #endregion
+            #region Draw Chart 
+            sers[0].Points.DataBindXY(dtx, DyArr[0]);
+            sers[1].Points.DataBindXY(dtx, DyArr[1]);
+            /*for (int i = 0; i < cnt; i++)
+            {
+                sers[0].Points.AddXY(dtx[i], DyArr[0][i]);
+                sers[1].Points.AddXY(dtx[i], DyArr[1][i]);
+            } */
+            ///////////////////////////////////////
+            datePickerS.Value = dtx[0];
+            datePickerE.Value = dtx[cnt-1];
+            TimePickerS.Value = dtx[0];
+            TimePickerE.Value = dtx[cnt - 1];
+            ///////////////////////////////////////         
+            #endregion
+            #region List Draw         
+            ListViewItem itm ;
+            ListViewItem.ListViewSubItem sItm;          
+            for (int i = 0; i < cnt; i++)
+            {           
+                itm= listView.Items.Add(dtx[i].ToString("yyyy-MM-dd  HH:mm:ss"));
+                sItm = itm.SubItems.Add(String.Format("{0:f2}", DyArr[0][i]));
+                sItm = itm.SubItems.Add(String.Format("{0:f2}", DyArr[1][i]));
+            }           
+            #endregion         
         }        
         #endregion
 

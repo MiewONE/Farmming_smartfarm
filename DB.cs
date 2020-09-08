@@ -42,16 +42,22 @@ namespace smartfarms
             con = new MySqlConnection(conString);
             con.Open();
         }
-        public MySqlDataReader query_execute(string _para_query)
+        public List<values> query_execute(string _para_query)
         {
+            List<values> datas = new List<values>();
             if (con.State == System.Data.ConnectionState.Closed) con.Open();
             cmd = new MySqlCommand(_para_query, con);
             MySqlDataReader rd = cmd.ExecuteReader();
-            DataSet ds = rd.;
+            
+            while(rd.Read())
+            {
+                datas.Add(new values(Convert.ToInt32(rd["temperature"]), Convert.ToInt32(rd["humidity"]), Convert.ToBoolean(rd["Fan"]), Convert.ToBoolean(rd["Pump"]), rd["dates"].ToString()));
+            }
             //cmd.ExecuteNonQuery();
+            rd.Close();
             con.Close();
 
-            return rd;
+            return datas;
         }
         private void Con_Open()
         {
@@ -198,6 +204,7 @@ namespace smartfarms
                     "auto_HumLOW int," +
                     "auto_HumHIGH int," +
                     "save_period int," +
+                    "time_inputdata int" +
                     "PumP_period int);");
                 #region 디비주석
                 //query = "create database if not exists `smartfarm`;";
@@ -235,5 +242,27 @@ namespace smartfarms
                 con.Close();
             }
         }
+    }
+    class values
+    {
+        private int temperature;
+        private int huminity;
+        private bool fan;
+        private bool pump;
+        private String date;
+
+        public values(int temp,int humi,bool fan,bool pump,string date)
+        {
+            this.temperature = temp;
+            this.huminity = humi;
+            this.fan = fan;
+            this.pump = pump;
+            this.date = date;
+        }
+        public int Tempberature{get{return temperature;}}
+        public int Humidity { get { return huminity; } }
+        public bool Fan{ get { return fan; } }
+        public bool Pump { get { return pump; } }
+        public String Date { get { return date; } }
     }
 }

@@ -33,41 +33,51 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.plin_humin = new System.Windows.Forms.Panel();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pb_humi = new System.Windows.Forms.PictureBox();
             this.pl_humi = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pb_temp = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_time_led = new System.Windows.Forms.Label();
             this.plin_heater = new System.Windows.Forms.Panel();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pl_heater = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pb_pump = new System.Windows.Forms.PictureBox();
             this.plin_pump = new System.Windows.Forms.Panel();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.pl_pump = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.pl_inhumi = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.lb_humi = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lb_temp = new System.Windows.Forms.Label();
             this.pl_fan = new System.Windows.Forms.Panel();
             this.plin_fan = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pb_fan = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pl_temp = new System.Windows.Forms.Panel();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pb_graph = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.pb_title = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pb_humi = new System.Windows.Forms.PictureBox();
-            this.pb_temp = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pb_auto = new System.Windows.Forms.PictureBox();
@@ -75,41 +85,42 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pb_help = new System.Windows.Forms.PictureBox();
             this.pb_setting = new System.Windows.Forms.PictureBox();
-            this.pb_pump = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pb_fan = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pb_btn_setting = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.tm_input = new System.Windows.Forms.Timer(this.components);
             this.plin_humin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_humi)).BeginInit();
             this.pl_humi.SuspendLayout();
             this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_temp)).BeginInit();
             this.plin_heater.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.pl_heater.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pump)).BeginInit();
             this.plin_pump.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.pl_pump.SuspendLayout();
             this.pl_inhumi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.pl_fan.SuspendLayout();
             this.plin_fan.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_fan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.pl_temp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_graph)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_title)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_humi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_temp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_auto)).BeginInit();
@@ -117,17 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_help)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pump)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_fan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_btn_setting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -167,6 +168,24 @@
             this.plin_humin.Size = new System.Drawing.Size(271, 98);
             this.plin_humin.TabIndex = 114;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = global::smartfarm.Properties.Resources.가습기_ON;
+            this.pictureBox12.Location = new System.Drawing.Point(225, 11);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(43, 67);
+            this.pictureBox12.TabIndex = 115;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(225, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 67);
+            this.pictureBox2.TabIndex = 116;
+            this.pictureBox2.TabStop = false;
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.SystemColors.Control;
@@ -200,6 +219,17 @@
             this.panel4.Size = new System.Drawing.Size(59, 98);
             this.panel4.TabIndex = 114;
             // 
+            // pb_humi
+            // 
+            this.pb_humi.Location = new System.Drawing.Point(3, 28);
+            this.pb_humi.Name = "pb_humi";
+            this.pb_humi.Size = new System.Drawing.Size(50, 50);
+            this.pb_humi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_humi.TabIndex = 105;
+            this.pb_humi.TabStop = false;
+            this.pb_humi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_humi_MouseDown);
+            this.pb_humi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_humi_MouseUp);
+            // 
             // pl_humi
             // 
             this.pl_humi.BackColor = System.Drawing.SystemColors.Control;
@@ -218,6 +248,17 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(59, 98);
             this.panel5.TabIndex = 117;
+            // 
+            // pb_temp
+            // 
+            this.pb_temp.Location = new System.Drawing.Point(3, 28);
+            this.pb_temp.Name = "pb_temp";
+            this.pb_temp.Size = new System.Drawing.Size(50, 50);
+            this.pb_temp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_temp.TabIndex = 105;
+            this.pb_temp.TabStop = false;
+            this.pb_temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_temp_MouseDown);
+            this.pb_temp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_temp_MouseUp);
             // 
             // label1
             // 
@@ -256,6 +297,24 @@
             this.plin_heater.Size = new System.Drawing.Size(271, 98);
             this.plin_heater.TabIndex = 115;
             // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = global::smartfarm.Properties.Resources.히터_ON;
+            this.pictureBox13.Location = new System.Drawing.Point(204, 11);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(66, 67);
+            this.pictureBox13.TabIndex = 115;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(201, 11);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(69, 67);
+            this.pictureBox10.TabIndex = 116;
+            this.pictureBox10.TabStop = false;
+            // 
             // pl_heater
             // 
             this.pl_heater.BackColor = System.Drawing.SystemColors.Control;
@@ -285,6 +344,17 @@
             this.panel7.Size = new System.Drawing.Size(59, 98);
             this.panel7.TabIndex = 117;
             // 
+            // pb_pump
+            // 
+            this.pb_pump.Location = new System.Drawing.Point(3, 28);
+            this.pb_pump.Name = "pb_pump";
+            this.pb_pump.Size = new System.Drawing.Size(50, 50);
+            this.pb_pump.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_pump.TabIndex = 105;
+            this.pb_pump.TabStop = false;
+            this.pb_pump.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_pump_MouseDown);
+            this.pb_pump.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_pump_MouseUp);
+            // 
             // plin_pump
             // 
             this.plin_pump.Controls.Add(this.panel7);
@@ -297,6 +367,24 @@
             this.plin_pump.Name = "plin_pump";
             this.plin_pump.Size = new System.Drawing.Size(271, 98);
             this.plin_pump.TabIndex = 115;
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
+            this.pictureBox27.Location = new System.Drawing.Point(3, 11);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox27.TabIndex = 115;
+            this.pictureBox27.TabStop = false;
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
+            this.pictureBox25.Location = new System.Drawing.Point(5, 11);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(67, 67);
+            this.pictureBox25.TabIndex = 116;
+            this.pictureBox25.TabStop = false;
             // 
             // pl_pump
             // 
@@ -326,24 +414,44 @@
             this.pl_inhumi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pl_inhumi.Controls.Add(this.pictureBox26);
             this.pl_inhumi.Controls.Add(this.pictureBox24);
-            this.pl_inhumi.Controls.Add(this.label9);
+            this.pl_inhumi.Controls.Add(this.lb_humi);
             this.pl_inhumi.Controls.Add(this.label6);
             this.pl_inhumi.Location = new System.Drawing.Point(2, 320);
             this.pl_inhumi.Name = "pl_inhumi";
             this.pl_inhumi.Size = new System.Drawing.Size(273, 100);
             this.pl_inhumi.TabIndex = 133;
             // 
-            // label9
+            // pictureBox26
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            this.label9.Font = new System.Drawing.Font("굴림", 21F);
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(123, 45);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(126, 33);
-            this.label9.TabIndex = 85;
-            this.label9.Text = "88%";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox26.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
+            this.pictureBox26.Location = new System.Drawing.Point(3, 7);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(82, 84);
+            this.pictureBox26.TabIndex = 112;
+            this.pictureBox26.TabStop = false;
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(3, 6);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(82, 84);
+            this.pictureBox24.TabIndex = 112;
+            this.pictureBox24.TabStop = false;
+            // 
+            // lb_humi
+            // 
+            this.lb_humi.BackColor = System.Drawing.SystemColors.Control;
+            this.lb_humi.Font = new System.Drawing.Font("굴림", 21F);
+            this.lb_humi.ForeColor = System.Drawing.Color.Black;
+            this.lb_humi.Location = new System.Drawing.Point(123, 45);
+            this.lb_humi.Name = "lb_humi";
+            this.lb_humi.Size = new System.Drawing.Size(126, 33);
+            this.lb_humi.TabIndex = 85;
+            this.lb_humi.Text = "88%";
+            this.lb_humi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -401,6 +509,34 @@
             this.panel6.Size = new System.Drawing.Size(59, 98);
             this.panel6.TabIndex = 117;
             // 
+            // pb_fan
+            // 
+            this.pb_fan.Location = new System.Drawing.Point(3, 28);
+            this.pb_fan.Name = "pb_fan";
+            this.pb_fan.Size = new System.Drawing.Size(50, 50);
+            this.pb_fan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pb_fan.TabIndex = 105;
+            this.pb_fan.TabStop = false;
+            this.pb_fan.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_fan_MouseDown);
+            this.pb_fan.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_fan_MouseUp);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(199, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(69, 67);
+            this.pictureBox4.TabIndex = 115;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(199, 20);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 67);
+            this.pictureBox3.TabIndex = 116;
+            this.pictureBox3.TabStop = false;
+            // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.Control;
@@ -437,6 +573,26 @@
             this.pl_temp.Name = "pl_temp";
             this.pl_temp.Size = new System.Drawing.Size(273, 100);
             this.pl_temp.TabIndex = 135;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(82, 84);
+            this.pictureBox23.TabIndex = 112;
+            this.pictureBox23.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
+            this.pictureBox22.Location = new System.Drawing.Point(3, 8);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(82, 84);
+            this.pictureBox22.TabIndex = 112;
+            this.pictureBox22.TabStop = false;
             // 
             // timer1
             // 
@@ -482,64 +638,6 @@
             this.pb_title.Size = new System.Drawing.Size(450, 57);
             this.pb_title.TabIndex = 131;
             this.pb_title.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::smartfarm.Properties.Resources.가습기_ON;
-            this.pictureBox12.Location = new System.Drawing.Point(225, 11);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(43, 67);
-            this.pictureBox12.TabIndex = 115;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(225, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 67);
-            this.pictureBox2.TabIndex = 116;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pb_humi
-            // 
-            this.pb_humi.Location = new System.Drawing.Point(3, 28);
-            this.pb_humi.Name = "pb_humi";
-            this.pb_humi.Size = new System.Drawing.Size(50, 50);
-            this.pb_humi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_humi.TabIndex = 105;
-            this.pb_humi.TabStop = false;
-            this.pb_humi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_humi_MouseDown);
-            this.pb_humi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_humi_MouseUp);
-            // 
-            // pb_temp
-            // 
-            this.pb_temp.Location = new System.Drawing.Point(3, 28);
-            this.pb_temp.Name = "pb_temp";
-            this.pb_temp.Size = new System.Drawing.Size(50, 50);
-            this.pb_temp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_temp.TabIndex = 105;
-            this.pb_temp.TabStop = false;
-            this.pb_temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_temp_MouseDown);
-            this.pb_temp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_temp_MouseUp);
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = global::smartfarm.Properties.Resources.히터_ON;
-            this.pictureBox13.Location = new System.Drawing.Point(204, 11);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(66, 67);
-            this.pictureBox13.TabIndex = 115;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(201, 11);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(69, 67);
-            this.pictureBox10.TabIndex = 116;
-            this.pictureBox10.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -618,83 +716,6 @@
             this.pb_setting.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_setting_MouseDown);
             this.pb_setting.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_setting_MouseUp);
             // 
-            // pb_pump
-            // 
-            this.pb_pump.Location = new System.Drawing.Point(3, 28);
-            this.pb_pump.Name = "pb_pump";
-            this.pb_pump.Size = new System.Drawing.Size(50, 50);
-            this.pb_pump.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_pump.TabIndex = 105;
-            this.pb_pump.TabStop = false;
-            this.pb_pump.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_pump_MouseDown);
-            this.pb_pump.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_pump_MouseUp);
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
-            this.pictureBox27.Location = new System.Drawing.Point(3, 11);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(67, 67);
-            this.pictureBox27.TabIndex = 115;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
-            this.pictureBox25.Location = new System.Drawing.Point(5, 11);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(67, 67);
-            this.pictureBox25.TabIndex = 116;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
-            this.pictureBox26.Location = new System.Drawing.Point(3, 7);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(82, 84);
-            this.pictureBox26.TabIndex = 112;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(3, 6);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(82, 84);
-            this.pictureBox24.TabIndex = 112;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pb_fan
-            // 
-            this.pb_fan.Location = new System.Drawing.Point(3, 28);
-            this.pb_fan.Name = "pb_fan";
-            this.pb_fan.Size = new System.Drawing.Size(50, 50);
-            this.pb_fan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pb_fan.TabIndex = 105;
-            this.pb_fan.TabStop = false;
-            this.pb_fan.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pb_fan_MouseDown);
-            this.pb_fan.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pb_fan_MouseUp);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(199, 20);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(69, 67);
-            this.pictureBox4.TabIndex = 115;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(199, 20);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 67);
-            this.pictureBox3.TabIndex = 116;
-            this.pictureBox3.TabStop = false;
-            // 
             // pb_btn_setting
             // 
             this.pb_btn_setting.Location = new System.Drawing.Point(756, 6);
@@ -702,26 +723,6 @@
             this.pb_btn_setting.Size = new System.Drawing.Size(44, 47);
             this.pb_btn_setting.TabIndex = 126;
             this.pb_btn_setting.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(82, 84);
-            this.pictureBox23.TabIndex = 112;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(3, 8);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(82, 84);
-            this.pictureBox22.TabIndex = 112;
-            this.pictureBox22.TabStop = false;
             // 
             // frm_Main
             // 
@@ -754,29 +755,39 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frm_Main_Load);
             this.plin_humin.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_humi)).EndInit();
             this.pl_humi.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_temp)).EndInit();
             this.plin_heater.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.pl_heater.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_pump)).EndInit();
             this.plin_pump.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.pl_pump.ResumeLayout(false);
             this.pl_inhumi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.pl_fan.ResumeLayout(false);
             this.plin_fan.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_fan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.pl_temp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_graph)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_title)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_humi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_temp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_auto)).EndInit();
@@ -784,17 +795,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_help)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_setting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_pump)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_fan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_btn_setting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -844,7 +845,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel pl_inhumi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lb_humi;
         private System.Windows.Forms.Label lb_temp;
         private System.Windows.Forms.Panel pl_fan;
         private System.Windows.Forms.Panel plin_fan;
@@ -858,6 +859,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pb_graph;
+        private System.Windows.Forms.Timer tm_input;
     }
 }
 
