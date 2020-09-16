@@ -135,7 +135,7 @@ namespace smartfarm.pl_data
                 scType_humi.Add(tt);
             }
 
-            //timer1.Start();//데이터 실시간으로 추가 기능
+            timer1.Start();//데이터 실시간으로 추가 기능
         }
 
         private void timer1_Tick(object sender, EventArgs e)

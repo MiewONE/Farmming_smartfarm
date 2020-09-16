@@ -157,7 +157,7 @@
   <data name="white_led" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white_led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pan_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -280,7 +280,7 @@
   <data name="적용1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\적용1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="pan_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mode_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
