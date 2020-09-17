@@ -62,23 +62,23 @@ namespace smartfarm
 
         private void data_Load(object sender, EventArgs e)
         {
-            if (ucl_temp.instance.IsDisposed)
-            {
-                //ucPanel_Water.instance.Show();
-                ucl_temp.instance.CreateControl();
-            }
-            else
-            {
-                //Se_Water.Image = Resources.pump; //이미지 변경
-                if (!pl_graph.Controls.Contains(ucl_temp.instance))
-                {
-                    pl_graph.Controls.Add(ucl_temp.instance);
-                    ucl_temp.instance.Dock = DockStyle.Fill;
-                    ucl_temp.instance.BringToFront();
-                }
-                else
-                    ucl_temp.instance.BringToFront();
-            }
+            //if (ucl_temp.instance.IsDisposed)
+            //{
+            //    //ucPanel_Water.instance.Show();
+            //    ucl_temp.instance.CreateControl();
+            //}
+            //else
+            //{
+            //    //Se_Water.Image = Resources.pump; //이미지 변경
+            //    if (!pl_graph.Controls.Contains(ucl_temp.instance))
+            //    {
+            //        pl_graph.Controls.Add(ucl_temp.instance);
+            //        ucl_temp.instance.Dock = DockStyle.Fill;
+            //        ucl_temp.instance.BringToFront();
+            //    }
+            //    else
+            //        ucl_temp.instance.BringToFront();
+            //}
         }
     }
 }

@@ -42,6 +42,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Selectbox = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -108,6 +109,8 @@
             this.HighTemperature.TabIndex = 42;
             this.HighTemperature.Text = "0";
             this.HighTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HighTemperature.Click += new System.EventHandler(this.HighTemperature_Click);
+            this.HighTemperature.TextChanged += new System.EventHandler(this.HighTemperature_TextChanged);
             // 
             // LowTemperature
             // 
@@ -120,6 +123,8 @@
             this.LowTemperature.TabIndex = 44;
             this.LowTemperature.Text = "0";
             this.LowTemperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LowTemperature.Click += new System.EventHandler(this.LowTemperature_Click);
+            this.LowTemperature.TextChanged += new System.EventHandler(this.LowTemperature_TextChanged);
             // 
             // StopHH
             // 
@@ -190,10 +195,23 @@
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
+            // Selectbox
+            // 
+            this.Selectbox.Font = new System.Drawing.Font("굴림", 30F);
+            this.Selectbox.FormattingEnabled = true;
+            this.Selectbox.ItemHeight = 40;
+            this.Selectbox.Location = new System.Drawing.Point(679, 294);
+            this.Selectbox.MultiColumn = true;
+            this.Selectbox.Name = "Selectbox";
+            this.Selectbox.Size = new System.Drawing.Size(68, 4);
+            this.Selectbox.TabIndex = 47;
+            this.Selectbox.Click += new System.EventHandler(this.Selectbox_Click);
+            // 
             // ucPanel_temp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Selectbox);
             this.Controls.Add(this.StopSS);
             this.Controls.Add(this.StartSS);
             this.Controls.Add(this.StopMM);
@@ -234,5 +252,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox Selectbox;
     }
 }

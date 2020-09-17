@@ -43,7 +43,7 @@ namespace smartfarms
         //}
         public void DBcon()
         {
-            string dbconString = string.Format($"Server=localhost;Database=farmming;User ID=root;Password=123;Pooling=false;");
+            string dbconString = string.Format($"Server=localhost;Database=farmming;User ID=temp;Password=123;Pooling=false;");
 
 
             dbcon = new MySqlConnection(dbconString);

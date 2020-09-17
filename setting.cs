@@ -137,7 +137,15 @@ namespace smartfarm
             pictureBox2.Image = Resources.apply;
             //db 세팅 저장
             DB.Instance.query_execute("update setting set " +
-                $"humi_runTimeHH = {variable.instance.humi_runTimeHH}","insert");
+                $"humi_runTimeHH = {variable.instance.humi_runTimeHH}," +
+                $"auto_HumLOW = {variable.instance.auto_HumLOW}," +
+                $"auto_HumHIGH = {variable.instance.auto_HumHIGH}," +
+                $"auto_TempHIGH = {variable.instance.auto_TempHIGH}," +
+                $"auto_TempLOW = {variable.instance.auto_TempLOW}" +
+                $"" +
+                $"" +
+                $"" +
+                $"","insert");
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)

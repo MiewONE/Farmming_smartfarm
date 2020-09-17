@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pl_graph = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pl_graph = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -54,6 +54,17 @@
             this.panel1.Size = new System.Drawing.Size(800, 70);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::smartfarm.Properties.Resources.close;
+            this.pictureBox2.Location = new System.Drawing.Point(676, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -71,25 +82,6 @@
             this.label1.Size = new System.Drawing.Size(41, 12);
             this.label1.TabIndex = 3;
             this.label1.Text = "온습도";
-            // 
-            // pl_graph
-            // 
-            this.pl_graph.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pl_graph.Location = new System.Drawing.Point(0, 70);
-            this.pl_graph.Name = "pl_graph";
-            this.pl_graph.Size = new System.Drawing.Size(800, 410);
-            this.pl_graph.TabIndex = 1;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::smartfarm.Properties.Resources.close;
-            this.pictureBox2.Location = new System.Drawing.Point(676, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
-            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
             // 
             // pictureBox3
             // 
@@ -109,6 +101,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pl_graph
+            // 
+            this.pl_graph.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pl_graph.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pl_graph.Location = new System.Drawing.Point(0, 70);
+            this.pl_graph.Name = "pl_graph";
+            this.pl_graph.Size = new System.Drawing.Size(800, 410);
+            this.pl_graph.TabIndex = 1;
             // 
             // data
             // 
