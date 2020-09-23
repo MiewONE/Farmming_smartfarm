@@ -154,8 +154,11 @@
   <data name="white_led" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white_led.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목 없음-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="se_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\se_1_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pan_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btn_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btn_on.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +196,8 @@
   <data name="정지시간1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\정지시간1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="se_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\se_1_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pan_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\제목 없음-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="히터" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\히터.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,9 +256,6 @@
   <data name="운전모드" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\New_UI\운전모드.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="수동" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\New_UI\수동.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -283,14 +283,11 @@
   <data name="적용1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\적용1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="제목 없음-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\제목 없음-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Circulation_BT_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circulation_BT_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="히터_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\히터_bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Data_Temperature2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data_Temperature2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="se_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\se_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -309,6 +306,9 @@
   </data>
   <data name="pump_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\2020-07-28펌프_Bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumiSetting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Setting_ui\HumiSetting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="환경설정1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\UI\Setting_ui\환경설정1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -341,6 +341,9 @@
     <value>..\Resources\환경설정.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Data_operating time" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Data_operating time.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\UI\Data\Data_operating time.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Data_Temperature2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UI\Data\Data_Temperature2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

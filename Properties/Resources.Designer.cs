@@ -303,6 +303,16 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap HumiSetting {
+            get {
+                object obj = ResourceManager.GetObject("HumiSetting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap led_2_black {
             get {
                 object obj = ResourceManager.GetObject("led_2_black", resourceCulture);
@@ -316,6 +326,26 @@ namespace smartfarm.Properties {
         internal static System.Drawing.Bitmap mode_3 {
             get {
                 object obj = ResourceManager.GetObject("mode_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pan_off {
+            get {
+                object obj = ResourceManager.GetObject("pan_off", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pan_on {
+            get {
+                object obj = ResourceManager.GetObject("pan_on", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,26 +676,6 @@ namespace smartfarm.Properties {
         internal static System.Drawing.Bitmap 정지시간1 {
             get {
                 object obj = ResourceManager.GetObject("정지시간1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 제목_없음_1 {
-            get {
-                object obj = ResourceManager.GetObject("제목 없음-1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap 제목_없음_2 {
-            get {
-                object obj = ResourceManager.GetObject("제목 없음-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

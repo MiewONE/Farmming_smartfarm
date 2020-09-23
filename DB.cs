@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Management.Instrumentation;
 using System.Text;
@@ -11,9 +12,14 @@ namespace smartfarms
 {
     class DB
     {
-        static public MySqlConnection con = null;
-        static public MySqlCommand cmd = null;
+        //static public MySqldbconnection dbcon = null;
+        //static public MySqlCommand cmd = null;
         string db_ip = "localhost", db_id = "root", db_pwd = "123", db_port = "3306";
+        IDbConnection dbcon;
+        IDbCommand cmd;
+        // mysql 비밀번호
+        // 집 tlqkfdk156
+        // 노트북 123
 
         private static DB instance;   
         public static DB Instance
@@ -37,32 +43,47 @@ namespace smartfarms
         //}
         public void DBcon()
         {
-            string conString = string.Format($"SERVER={db_ip};user={db_id};password={db_pwd};port={db_port};");
-            con = new MySqlConnection(conString);
-            con.Open();
+            string dbconString = string.Format($"Server=localhost;Database=farmming;User ID=temp;Password=123;Pooling=false;");
+
+
+            dbcon = new MySqlConnection(dbconString);
+            dbcon.Open();
+            cmd = dbcon.CreateCommand();
         }
-        static public void query_execute(string _para_query)
+        public List<values> query_execute(string _para_query)
         {
-            if (con.State == System.Data.ConnectionState.Closed) con.Open();
-            cmd = new MySqlCommand(_para_query, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
-        static private void Con_Open()
-        {
-            if (con != null && con.State == System.Data.ConnectionState.Closed)
+            List<values> datas = new List<values>();
+            if (dbcon.State == System.Data.ConnectionState.Closed) dbcon.Open();
+            //cmd = new MySqlCommand(_para_query, dbcon);
+            cmd.CommandText = _para_query;
+            IDataReader rd = cmd.ExecuteReader();
+            
+            while(rd.Read())
             {
-                con.Open();
+                datas.Add(new values(Convert.ToInt32(rd["temperature"]), Convert.ToInt32(rd["humidity"]), Convert.ToBoolean(rd["Fan"]), Convert.ToBoolean(rd["Pump"]), rd["dates"].ToString()));
+            }
+            //cmd.ExecuteNonQuery();
+            rd.Close();
+            dbcon.Close();
+
+            return datas;
+        }
+        private void dbcon_Open()
+        {
+            if (dbcon != null && dbcon.State == System.Data.ConnectionState.Closed)
+            {
+                dbcon.Open();
             }
         }
         public void query_execute(string _para_query, string mode)
         {
-            Con_Open();
+            dbcon_Open();
             switch (mode)
             {
                 case "select":
-                    cmd = new MySqlCommand(_para_query, con);
-                    MySqlDataReader rd = cmd.ExecuteReader();
+                    //cmd = new MySqlCommand(_para_query, dbcon);
+                    cmd.CommandText = _para_query;
+                    IDataReader rd = cmd.ExecuteReader();
                     //System.Windows.Forms.MessageBox.Show(rd.Read().ToString());
                     if (rd.Read())
                     {
@@ -139,13 +160,14 @@ namespace smartfarms
                     }
                     break;
                 case "insert":
-                    cmd = new MySqlCommand(_para_query, con);
+                    //cmd = new MySqlCommand(_para_query, dbcon);
+                    cmd.CommandText = _para_query;
                     cmd.ExecuteNonQuery();
                     break;
                 default:
                     break;
             }
-            con.Close();
+            dbcon.Close();
         }
         public void DBorTable_Create()
         {
@@ -153,7 +175,7 @@ namespace smartfarms
 
             try
             {
-                if(con.State == System.Data.ConnectionState.Closed) con.Open();
+                if(dbcon.State == System.Data.ConnectionState.Closed) dbcon.Open();
                 query_execute("create database if not exists `farmming`;");
                 query_execute("use farmming;");
                 query_execute("create table if not exists save_state (" +
@@ -193,10 +215,11 @@ namespace smartfarms
                     "auto_HumLOW int," +
                     "auto_HumHIGH int," +
                     "save_period int," +
+                    "time_inputdata int," +
                     "PumP_period int);");
                 #region 디비주석
                 //query = "create database if not exists `smartfarm`;";
-                //cmd = new MySqlCommand(query, con);
+                //cmd = new MySqlCommand(query, dbcon);
                 //cmd.ExecuteNonQuery();
                 //query = "create table if not exists save_state (" +
                 //    "temperature int," +
@@ -221,18 +244,36 @@ namespace smartfarms
             }
             catch (Exception e)
             {
-                if (con != null && con.State == System.Data.ConnectionState.Closed)
+                if (dbcon != null && dbcon.State == System.Data.ConnectionState.Closed)
                 {
                     System.Windows.Forms.MessageBox.Show("데이터베이스 연결에 실패하였습니다."+ e.StackTrace);
                     //System.Windows.Forms.MessageBox.Show(e.StackTrace);
                 }
                 
-                con.Close();
+                dbcon.Close();
             }
         }
-        static void save_state()
-        {
+    }
+    class values
+    {
+        private int temperature;
+        private int huminity;
+        private bool fan;
+        private bool pump;
+        private String date;
 
+        public values(int temp,int humi,bool fan,bool pump,string date)
+        {
+            this.temperature = temp;
+            this.huminity = humi;
+            this.fan = fan;
+            this.pump = pump;
+            this.date = date;
         }
+        public int Tempberature{get{return temperature;}}
+        public int Humidity { get { return huminity; } }
+        public bool Fan{ get { return fan; } }
+        public bool Pump { get { return pump; } }
+        public String Date { get { return date; } }
     }
 }
