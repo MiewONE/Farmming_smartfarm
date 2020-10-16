@@ -390,6 +390,17 @@ namespace smartfarm
             //variable.instance.temp_value = tm;
             ////variable.instance.temp_value = GPIO.ADC1.Read();
             ////MessageBox.Show("온습도" + GPIO.ADC1.Read().ToString());
+            using (StreamReader file = File.OpenText("../tmpHumi.txt"))
+            {
+                string s = file.ReadToEnd();
+                if(s.Length >1 )
+                {
+                    string[] sp = s.Split(',');
+                    variable.instance.temp_value = float.Parse(sp[1]);
+                    variable.instance.humi_value = float.Parse(sp[0]);
+                }
+                
+            }
             lb_temp.Text = variable.instance.temp_value.ToString() + "℃";
             lb_humi.Text = variable.instance.humi_value.ToString() + "%";
             DB.Instance.query_execute($"insert into save_state values({variable.instance.temp_value},{variable.instance.humi_value},{variable.instance.fan},{variable.instance.pump},now());");

@@ -43,11 +43,14 @@ namespace smartfarms
         //}
         public void DBcon()
         {
-            string dbconString = string.Format($"Server=localhost;Database=farmming;User ID=temp;Password=123;Pooling=false;");
+            string dbconString = string.Format($"Server=localhost;Database=farmming;User ID=test;Password=123;Pooling=false;");
+            string dbcons = "Server=localhost;Database=farmming;User ID=test;Password=123;Pooling=false;";
 
 
-            dbcon = new MySqlConnection(dbconString);
+            dbcon = new MySqlConnection(dbcons);
+            Console.WriteLine("db Connection");
             dbcon.Open();
+            
             cmd = dbcon.CreateCommand();
         }
         public List<values> query_execute(string _para_query)
@@ -68,7 +71,7 @@ namespace smartfarms
 
             return datas;
         }
-        private void dbcon_Open()
+        public void dbcon_Open()
         {
             if (dbcon != null && dbcon.State == System.Data.ConnectionState.Closed)
             {
@@ -168,6 +171,22 @@ namespace smartfarms
                     break;
             }
             dbcon.Close();
+        }
+        public DataSet getData()
+        {
+            #region Mono에서 동작하는 디비
+            //string sql = "select * from save_state;";
+            //cmd.CommandText = sql;
+            //IDataReader rd = cmd.ExecuteReader();
+            //while(rd.Read())
+            //{
+
+            //}
+            #endregion
+            MySqlDataAdapter adap = new MySqlDataAdapter("select * from save_state;", (MySqlConnection)dbcon);
+            DataSet ds = new DataSet();
+            adap.Fill(ds);
+            return ds;
         }
         public void DBorTable_Create()
         {

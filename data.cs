@@ -74,11 +74,54 @@ namespace smartfarm
             //    {
             //        pl_graph.Controls.Add(ucl_temp.instance);
             //        ucl_temp.instance.Dock = DockStyle.Fill;
-            //        ucl_temp.instance.BringToFront();
+            //        ucl_temp.instance.BringToFront(); 
             //    }
             //    else
             //        ucl_temp.instance.BringToFront();
             //}
+            if (ucl_etc.instance.IsDisposed)
+            {
+                //ucPanel_Water.instance.Show();
+                ucl_etc.instance.CreateControl();
+            }
+            else
+            {
+                //Se_Water.Image = Resources.pump; //이미지 변경
+                if (!pl_graph.Controls.Contains(ucl_etc.instance))
+                {
+                    pl_graph.Controls.Add(ucl_etc.instance);
+                    ucl_etc.instance.Dock = DockStyle.Fill;
+                    ucl_etc.instance.BringToFront();
+                }
+                else
+                    ucl_etc.instance.BringToFront();
+            }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (ucl_etc.instance.IsDisposed)
+            {
+                //ucPanel_Water.instance.Show();
+                ucl_etc.instance.CreateControl();
+            }
+            else
+            {
+                //Se_Water.Image = Resources.pump; //이미지 변경
+                if (!pl_graph.Controls.Contains(ucl_etc.instance))
+                {
+                    pl_graph.Controls.Add(ucl_etc.instance);
+                    ucl_etc.instance.Dock = DockStyle.Fill;
+                    ucl_etc.instance.BringToFront();
+                }
+                else
+                    ucl_etc.instance.BringToFront();
+            }
         }
     }
 }

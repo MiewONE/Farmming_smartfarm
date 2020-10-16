@@ -51,8 +51,23 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="MfgControl.AdvancedHMI.Controls">
+      <HintPath>C:\Users\miewone\Downloads\advancedhmi\AdvancedHMI\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="MfgControl.AdvancedHMI.Drivers">
+      <HintPath>C:\Users\miewone\Downloads\advancedhmi\AdvancedHMI\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>packages\MySql.Data.8.0.21\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcComRcw">
+      <HintPath>C:\Users\miewone\Downloads\advancedhmi\AdvancedHMI\AdvancedHMIControls\bin\Release\OpcComRcw.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi">
+      <HintPath>C:\Users\miewone\Downloads\advancedhmi\AdvancedHMI\AdvancedHMIControls\bin\Release\OpcNetApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi.Com">
+      <HintPath>C:\Users\miewone\Downloads\advancedhmi\AdvancedHMI\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll</HintPath>
     </Reference>
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
       <HintPath>packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
@@ -117,12 +132,6 @@
     <Compile Include="pl_data\ucl_etc.Designer.cs">
       <DependentUpon>ucl_etc.cs</DependentUpon>
     </Compile>
-    <Compile Include="pl_data\ucl_humi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="pl_data\ucl_humi.Designer.cs">
-      <DependentUpon>ucl_humi.cs</DependentUpon>
-    </Compile>
     <Compile Include="pl_data\ucl_temp.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -170,9 +179,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pl_data\ucl_etc.resx">
       <DependentUpon>ucl_etc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pl_data\ucl_humi.resx">
-      <DependentUpon>ucl_humi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pl_data\ucl_temp.resx">
       <DependentUpon>ucl_temp.cs</DependentUpon>
