@@ -10,7 +10,7 @@ using System.IO;
 using System.IO.Ports;
 using System.Diagnostics;
 using smartfarms;
-
+using System.Threading;
 
 namespace smartfarm
 {
@@ -396,8 +396,8 @@ namespace smartfarm
                 if(s.Length >1 )
                 {
                     string[] sp = s.Split(',');
-                    variable.instance.temp_value = float.Parse(sp[1]);
-                    variable.instance.humi_value = float.Parse(sp[0]);
+                    variable.instance.temp_value = float.Parse(sp[0]);
+                    variable.instance.humi_value = float.Parse(sp[1]);
                 }
                 
             }
@@ -501,27 +501,41 @@ namespace smartfarm
         private void tm_stopwatch_Tick(object sender, EventArgs e)
         {
 
-            if (variable.instance.temp)
-            {
-                tbar_temp.Value++;
-                
-            }
-            if (variable.instance.humin)
-            {
-                tbar_humi.Value++;
-                
-            }
-            //if(variable.instance.fan)
+            //if (variable.instance.temp)
             //{
-            //    tbar_temp.Value--;
-            //    tbar_humi.Value--;
+            //    tbar_temp.Value++;
+                
             //}
+            //if (variable.instance.humin)
+            //{
+            //    tbar_humi.Value++;
+                
+            //}
+            ////if(variable.instance.fan)
+            ////{
+            ////    tbar_temp.Value--;
+            ////    tbar_humi.Value--;
+            ////}
 
-            lb_humi_tm.Text = sp.Elapsed.ToString();
-            lb_temp_tm.Text = sp2.Elapsed.ToString();
-            lb_fan_tm.Text = sp3.Elapsed.ToString();
+            //lb_humi_tm.Text = sp.Elapsed.ToString();
+            //lb_temp_tm.Text = sp2.Elapsed.ToString();
+            //lb_fan_tm.Text = sp3.Elapsed.ToString();
 
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //var tt = GPIO.ADC1.Read();
+            //MessageBox.Show(tt.ToString());
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            //GPIO.Output19.IsOn = true; // 난방기 작동
+            GPIO.Output22.IsOn = true;
+            Thread.Sleep(1000 * 7);
+            GPIO.Output22.IsOn = false;
         }
     }
 }

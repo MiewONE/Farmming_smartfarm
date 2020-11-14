@@ -47,6 +47,7 @@
             this.pl_heater = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.plin_pump = new System.Windows.Forms.Panel();
             this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.pictureBox25 = new System.Windows.Forms.PictureBox();
@@ -88,7 +89,6 @@
             this.pb_btn_setting = new System.Windows.Forms.PictureBox();
             this.timer_pump = new System.Windows.Forms.Timer(this.components);
             this.tm_stopwatch = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.plin_humin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_humini)).BeginInit();
             this.panel4.SuspendLayout();
@@ -311,6 +311,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(59, 98);
             this.panel7.TabIndex = 117;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(8, 29);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(42, 44);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "공급";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // plin_pump
             // 
@@ -718,15 +728,6 @@
             // 
             this.tm_stopwatch.Interval = 1000;
             this.tm_stopwatch.Tick += new System.EventHandler(this.tm_stopwatch_Tick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(8, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "공급";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // frm_Main
             // 

@@ -29,79 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPanel_Water));
-            this.StopSS = new System.Windows.Forms.TextBox();
             this.StartSS = new System.Windows.Forms.TextBox();
-            this.StopMM = new System.Windows.Forms.TextBox();
             this.StartMM = new System.Windows.Forms.TextBox();
-            this.StopHH = new System.Windows.Forms.TextBox();
             this.StartHH = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.Selectbox = new System.Windows.Forms.ListBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // StopSS
-            // 
-            this.StopSS.BackColor = System.Drawing.SystemColors.Control;
-            this.StopSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopSS.Location = new System.Drawing.Point(452, 191);
-            this.StopSS.Multiline = true;
-            this.StopSS.Name = "StopSS";
-            this.StopSS.Size = new System.Drawing.Size(58, 42);
-            this.StopSS.TabIndex = 34;
-            this.StopSS.Text = "0";
-            this.StopSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // StartSS
             // 
             this.StartSS.BackColor = System.Drawing.SystemColors.Control;
             this.StartSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartSS.Location = new System.Drawing.Point(452, 140);
+            this.StartSS.Location = new System.Drawing.Point(493, 140);
             this.StartSS.Multiline = true;
             this.StartSS.Name = "StartSS";
             this.StartSS.Size = new System.Drawing.Size(58, 42);
             this.StartSS.TabIndex = 35;
             this.StartSS.Text = "0";
             this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StopMM
-            // 
-            this.StopMM.BackColor = System.Drawing.SystemColors.Control;
-            this.StopMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopMM.Location = new System.Drawing.Point(341, 191);
-            this.StopMM.Multiline = true;
-            this.StopMM.Name = "StopMM";
-            this.StopMM.Size = new System.Drawing.Size(58, 42);
-            this.StopMM.TabIndex = 36;
-            this.StopMM.Text = "0";
-            this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartSS.Click += new System.EventHandler(this.StartSS_Click);
+            this.StartSS.TextChanged += new System.EventHandler(this.StartSS_TextChanged);
             // 
             // StartMM
             // 
             this.StartMM.BackColor = System.Drawing.SystemColors.Control;
             this.StartMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartMM.Location = new System.Drawing.Point(341, 140);
+            this.StartMM.Location = new System.Drawing.Point(376, 140);
             this.StartMM.Multiline = true;
             this.StartMM.Name = "StartMM";
             this.StartMM.Size = new System.Drawing.Size(58, 42);
             this.StartMM.TabIndex = 37;
             this.StartMM.Text = "0";
             this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // StopHH
-            // 
-            this.StopHH.BackColor = System.Drawing.SystemColors.Control;
-            this.StopHH.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StopHH.Location = new System.Drawing.Point(226, 191);
-            this.StopHH.Multiline = true;
-            this.StopHH.Name = "StopHH";
-            this.StopHH.Size = new System.Drawing.Size(58, 42);
-            this.StopHH.TabIndex = 38;
-            this.StopHH.Text = "0";
-            this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartMM.Click += new System.EventHandler(this.StartMM_Click);
+            this.StartMM.TextChanged += new System.EventHandler(this.StartMM_TextChanged);
             // 
             // StartHH
             // 
@@ -114,24 +78,8 @@
             this.StartHH.TabIndex = 39;
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(64, 99);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 35);
-            this.pictureBox3.TabIndex = 33;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(64, 185);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
+            this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
+            this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
             // 
             // pictureBox1
             // 
@@ -142,40 +90,52 @@
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
+            // Selectbox
+            // 
+            this.Selectbox.Font = new System.Drawing.Font("굴림", 30F);
+            this.Selectbox.FormattingEnabled = true;
+            this.Selectbox.ItemHeight = 40;
+            this.Selectbox.Location = new System.Drawing.Point(698, 295);
+            this.Selectbox.MultiColumn = true;
+            this.Selectbox.Name = "Selectbox";
+            this.Selectbox.Size = new System.Drawing.Size(68, 4);
+            this.Selectbox.TabIndex = 40;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(64, 94);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 35);
+            this.pictureBox6.TabIndex = 41;
+            this.pictureBox6.TabStop = false;
+            // 
             // ucPanel_Water
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Controls.Add(this.StopSS);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.Selectbox);
             this.Controls.Add(this.StartSS);
-            this.Controls.Add(this.StopMM);
             this.Controls.Add(this.StartMM);
-            this.Controls.Add(this.StopHH);
             this.Controls.Add(this.StartHH);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucPanel_Water";
             this.Size = new System.Drawing.Size(800, 335);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox StopSS;
         private System.Windows.Forms.TextBox StartSS;
-        private System.Windows.Forms.TextBox StopMM;
         private System.Windows.Forms.TextBox StartMM;
-        private System.Windows.Forms.TextBox StopHH;
         private System.Windows.Forms.TextBox StartHH;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox Selectbox;
+        private System.Windows.Forms.PictureBox pictureBox6;
     }
 }
