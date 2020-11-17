@@ -34,7 +34,7 @@ namespace smartfarm
             pb_mode.Location = new Point(300, 62);
             pb_auto.Location = new Point(417, 62);
             pb_setting.Location = new Point(756, 6);
-            pb_help.Location = new Point(712, 10);
+            
             pb_logo.Size = new Size(209, 40);
             pl_humi.Size = new Size(273, 100);
             pl_fan.Size = new Size(273, 100);
@@ -302,23 +302,6 @@ namespace smartfarm
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                pl_humi.Location+""+
-                pl_fan.Location + "" +
-                pl_heater.Location + "" +
-                pl_inhumi.Location + "" +
-                pl_pump.Location + "" +
-                pl_temp.Location + "" +
-                pb_logo.Location + "" +
-                pb_title.Location + "" +
-                pb_mode.Location + "" +
-                pb_auto.Location + "" +
-                pb_setting.Location + "" +
-                pb_help.Location);
-        }
-
         private void pb_auto_Click(object sender, EventArgs e)
         {
             if (variable.instance.Mode == true)//수동 false, 자동 true
@@ -337,7 +320,8 @@ namespace smartfarm
                 //pb_auto.Image = Resources.자동;
                 panel4.Visible = false;
                 panel5.Visible = false;
-                
+
+                timer_pump.Interval = (int)variable.instance.Pump_period;
                 timer_pump.Start();
                 tm_input.Start();
 
@@ -403,7 +387,11 @@ namespace smartfarm
             }
             lb_temp.Text = variable.instance.temp_value.ToString() + "℃";
             lb_humi.Text = variable.instance.humi_value.ToString() + "%";
-            DB.Instance.query_execute($"insert into save_state values({variable.instance.temp_value},{variable.instance.humi_value},{variable.instance.fan},{variable.instance.pump},now());");
+            DB.Instance.query_execute($"insert into save_state values(" +
+                $"{variable.instance.temp_value}," +
+                $"{variable.instance.humi_value}," +
+                $"{variable.instance.fan}," +
+                $"{variable.instance.pump},now());");
         }
 
         private void pb_graph_Click(object sender, EventArgs e)
@@ -496,6 +484,8 @@ namespace smartfarm
         private void timer_pump_Tick(object sender, EventArgs e)
         {
             GPIO.Output22.IsOn = true;
+            Thread.Sleep(1000 * 7);
+            GPIO.Output22.IsOn = false;
         }
 
         private void tm_stopwatch_Tick(object sender, EventArgs e)

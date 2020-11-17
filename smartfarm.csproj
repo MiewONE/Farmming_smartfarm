@@ -417,5 +417,11 @@
   <ItemGroup>
     <None Include="UI\Setting_ui\HumiSetting.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\pump_period.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UI\Setting_ui\자동.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

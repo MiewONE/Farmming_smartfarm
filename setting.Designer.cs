@@ -39,7 +39,6 @@
             this.Se_logo = new System.Windows.Forms.PictureBox();
             this.Se_Temp = new System.Windows.Forms.PictureBox();
             this.Se_Humi = new System.Windows.Forms.PictureBox();
-            this.Se_Fan = new System.Windows.Forms.PictureBox();
             this.Se_Water = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -51,7 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Se_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Temp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Humi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Se_Fan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Water)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,7 +131,6 @@
             this.panel2.Controls.Add(this.Se_logo);
             this.panel2.Controls.Add(this.Se_Temp);
             this.panel2.Controls.Add(this.Se_Humi);
-            this.panel2.Controls.Add(this.Se_Fan);
             this.panel2.Controls.Add(this.Se_Water);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -153,9 +150,9 @@
             // Se_Temp
             // 
             this.Se_Temp.Image = global::smartfarm.Properties.Resources.heater;
-            this.Se_Temp.Location = new System.Drawing.Point(302, -1);
+            this.Se_Temp.Location = new System.Drawing.Point(203, -3);
             this.Se_Temp.Name = "Se_Temp";
-            this.Se_Temp.Size = new System.Drawing.Size(100, 64);
+            this.Se_Temp.Size = new System.Drawing.Size(100, 67);
             this.Se_Temp.TabIndex = 22;
             this.Se_Temp.TabStop = false;
             this.Se_Temp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Se_Temp_MouseDown);
@@ -164,24 +161,13 @@
             // Se_Humi
             // 
             this.Se_Humi.Image = global::smartfarm.Properties.Resources.humin;
-            this.Se_Humi.Location = new System.Drawing.Point(201, 0);
+            this.Se_Humi.Location = new System.Drawing.Point(102, -2);
             this.Se_Humi.Name = "Se_Humi";
-            this.Se_Humi.Size = new System.Drawing.Size(100, 64);
+            this.Se_Humi.Size = new System.Drawing.Size(100, 66);
             this.Se_Humi.TabIndex = 22;
             this.Se_Humi.TabStop = false;
             this.Se_Humi.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Se_Humi_MouseDown);
             this.Se_Humi.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Se_Humi_MouseUp);
-            // 
-            // Se_Fan
-            // 
-            this.Se_Fan.Image = global::smartfarm.Properties.Resources.fan;
-            this.Se_Fan.Location = new System.Drawing.Point(101, 0);
-            this.Se_Fan.Name = "Se_Fan";
-            this.Se_Fan.Size = new System.Drawing.Size(100, 64);
-            this.Se_Fan.TabIndex = 22;
-            this.Se_Fan.TabStop = false;
-            this.Se_Fan.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Se_Fan_MouseDown);
-            this.Se_Fan.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Se_Fan_MouseUp);
             // 
             // Se_Water
             // 
@@ -217,7 +203,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Se_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Temp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Humi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Se_Fan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Se_Water)).EndInit();
             this.ResumeLayout(false);
 
@@ -231,7 +216,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox Se_Temp;
         private System.Windows.Forms.PictureBox Se_Humi;
-        private System.Windows.Forms.PictureBox Se_Fan;
         private System.Windows.Forms.PictureBox Se_Water;
         private System.Windows.Forms.PictureBox Se_Title;
         private System.Windows.Forms.PictureBox Se_logo;

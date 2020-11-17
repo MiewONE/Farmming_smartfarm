@@ -83,5 +83,77 @@ namespace smartfarm.Setting_ui
                 MessageBox.Show("숫자를 눌러주시기 바랍니다", "확인");
             }
         }
+
+        private void StartMM_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StartMM, 0, 59);
+        }
+
+        private void StartMM_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_runTimeMM = Convert.ToInt32(StartMM.Text);
+        }
+
+        private void StartHH_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StartHH, 0, 23);
+        }
+
+        private void StartSS_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StartSS, 0, 59);
+        }
+
+        private void StopHH_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StopHH, 0, 59);
+        }
+
+        private void StopMM_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StopMM, 0, 59);
+        }
+
+        private void StopSS_Click(object sender, EventArgs e)
+        {
+            setting_tbx(StopSS, 0, 59);
+        }
+
+        private void StopHH_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_stoptimeHH = Convert.ToInt32(StopHH.Text);
+        }
+
+        private void StopMM_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_stoptimeMM = Convert.ToInt32(StopMM.Text);
+        }
+
+        private void StopSS_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_stoptimeSS = Convert.ToInt32(StopSS.Text);
+        }
+
+        private void StartHH_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_runTimeHH = Convert.ToInt32(StartHH.Text);
+        }
+
+        private void StartSS_TextChanged(object sender, EventArgs e)
+        {
+            variable.instance.temp_runTimeSS = Convert.ToInt32(StartSS.Text);
+        }
+
+        private void ucPanel_temp_Load(object sender, EventArgs e)
+        {
+            StartHH.Text = variable.instance.temp_runTimeHH.ToString();
+            StartMM.Text = variable.instance.temp_runTimeMM.ToString();
+            StartSS.Text = variable.instance.temp_runTimeSS.ToString();
+            StopHH.Text = variable.instance.temp_stoptimeHH.ToString();
+            StopMM.Text = variable.instance.temp_stoptimeMM.ToString();
+            StopSS.Text = variable.instance.temp_stoptimeSS.ToString();
+            HighTemperature.Text = variable.instance.auto_TempHIGH.ToString();
+            LowTemperature.Text = variable.instance.auto_TempLOW.ToString();
+        }
     }
 }

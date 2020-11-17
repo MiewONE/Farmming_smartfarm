@@ -61,6 +61,8 @@
             this.StopSS.TabIndex = 37;
             this.StopSS.Text = "0";
             this.StopSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopSS.Click += new System.EventHandler(this.StopSS_Click);
+            this.StopSS.TextChanged += new System.EventHandler(this.StopSS_TextChanged);
             // 
             // StartSS
             // 
@@ -73,6 +75,8 @@
             this.StartSS.TabIndex = 38;
             this.StartSS.Text = "0";
             this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartSS.Click += new System.EventHandler(this.StartSS_Click);
+            this.StartSS.TextChanged += new System.EventHandler(this.StartSS_TextChanged);
             // 
             // StopMM
             // 
@@ -85,6 +89,8 @@
             this.StopMM.TabIndex = 39;
             this.StopMM.Text = "0";
             this.StopMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopMM.Click += new System.EventHandler(this.StopMM_Click);
+            this.StopMM.TextChanged += new System.EventHandler(this.StopMM_TextChanged);
             // 
             // StartMM
             // 
@@ -97,6 +103,8 @@
             this.StartMM.TabIndex = 40;
             this.StartMM.Text = "0";
             this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartMM.Click += new System.EventHandler(this.StartMM_Click);
+            this.StartMM.TextChanged += new System.EventHandler(this.StartMM_TextChanged);
             // 
             // HighTemperature
             // 
@@ -137,6 +145,8 @@
             this.StopHH.TabIndex = 45;
             this.StopHH.Text = "0";
             this.StopHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StopHH.Click += new System.EventHandler(this.StopHH_Click);
+            this.StopHH.TextChanged += new System.EventHandler(this.StopHH_TextChanged);
             // 
             // StartHH
             // 
@@ -149,6 +159,8 @@
             this.StartHH.TabIndex = 46;
             this.StartHH.Text = "0";
             this.StartHH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
+            this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
             // 
             // pictureBox6
             // 
@@ -228,6 +240,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucPanel_temp";
             this.Size = new System.Drawing.Size(800, 335);
+            this.Load += new System.EventHandler(this.ucPanel_temp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

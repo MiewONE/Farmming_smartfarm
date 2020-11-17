@@ -85,7 +85,7 @@ namespace smartfarm
         {
             Se_Water.Image = Resources.pump_bar;
             Se_Humi.Image = Resources.humin_bar;
-            Se_Fan.Image = Resources.fan_bar;
+            //Se_Fan.Image = Resources.fan_bar;
             Se_Temp.Image = Resources.heater_bar;
         }
 
@@ -137,15 +137,38 @@ namespace smartfarm
             pictureBox2.Image = Resources.apply;
             //db 세팅 저장
             DB.Instance.query_execute("update setting set " +
-                $"humi_runTimeHH = {variable.instance.humi_runTimeHH}," +
                 $"auto_HumLOW = {variable.instance.auto_HumLOW}," +
                 $"auto_HumHIGH = {variable.instance.auto_HumHIGH}," +
                 $"auto_TempHIGH = {variable.instance.auto_TempHIGH}," +
-                $"auto_TempLOW = {variable.instance.auto_TempLOW}" +
-                $"" +
-                $"" +
-                $"" +
+                $"auto_TempLOW = {variable.instance.auto_TempLOW}," +
+                $"temp_runtimeHH ={variable.instance.temp_runTimeHH}," +
+                $"temp_runtimeMM ={variable.instance.temp_runTimeMM}," +
+                $"temp_runtimeSS ={variable.instance.temp_runTimeSS}," +
+                $"temp_stoptimeHH ={variable.instance.temp_stoptimeHH}," +
+                $"temp_stoptimeMM ={variable.instance.temp_stoptimeMM}," +
+                $"temp_stoptimeSS ={variable.instance.temp_stoptimeSS}," +//te
+                $"humi_runtimeHH ={variable.instance.humi_runTimeHH}," +
+                $"humi_runtimeMM ={variable.instance.humi_runTimeMM}," +
+                $"humi_runtimeSS ={variable.instance.humi_runTimeSS}," +
+                $"humi_stoptimeHH ={variable.instance.humi_stoptimeHH}," +
+                $"humi_stoptimeMM ={variable.instance.humi_stoptimeMM}," +
+                $"humi_stoptimeSS ={variable.instance.humi_stoptimeSS}," +//hu
+                //$"water_runtimeHH ={}," +
+                //$"water_runtimeMM ={}," +
+                //$"water_runtimeSS ={}," +
+                //$"water_stoptimeHH ={}," +
+                //$"water_stoptimeMM ={}," +
+                //$"water_stoptimeSS ={}," +//w
+                //$"fan_runtimeHH ={}," +
+                //$"fan_runtimeMM ={}," +
+                //$"fan_runtimeSS ={}," +
+                //$"fan_stoptimeHH ={}," +
+                //$"fan_stoptimeMM ={}," +
+                //$"fan_stoptimeSS ={}," +//fan
+                $"save_period ={variable.instance.save_period}," +
+                $"PumP_period ={variable.instance.Pump_period};"+
                 $"","insert");
+            MessageBox.Show("설정 저장이 완료되었습니다.");
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
@@ -153,24 +176,24 @@ namespace smartfarm
             pictureBox2.Image = Resources.apply_push;
         }
 
-        private void Se_Fan_MouseUp(object sender, MouseEventArgs e)
-        {
-            Se_Fan.Image = Resources.fan;
-            if (!pl_UIback.Controls.Contains(ucPanel_fan.instance))
-            {
-                pl_UIback.Controls.Add(ucPanel_fan.instance);
-                ucPanel_fan.instance.Dock = DockStyle.Fill;
-                ucPanel_fan.instance.BringToFront();
-            }
-            else
-                ucPanel_fan.instance.BringToFront();
-        }
+        //private void Se_Fan_MouseUp(object sender, MouseEventArgs e)
+        //{
+        //    Se_Fan.Image = Resources.fan;
+        //    if (!pl_UIback.Controls.Contains(ucPanel_fan.instance))
+        //    {
+        //        pl_UIback.Controls.Add(ucPanel_fan.instance);
+        //        ucPanel_fan.instance.Dock = DockStyle.Fill;
+        //        ucPanel_fan.instance.BringToFront();
+        //    }
+        //    else
+        //        ucPanel_fan.instance.BringToFront();
+        //}
 
         private void Se_Fan_MouseDown(object sender, MouseEventArgs e)
         {
             Se_Water.Image = Resources.pump_bar;
             Se_Humi.Image = Resources.humin_bar;
-            Se_Fan.Image = Resources.fan_bar;
+            //Se_Fan.Image = Resources.fan_bar;
             Se_Temp.Image = Resources.heater_bar;
         }
 
@@ -178,7 +201,7 @@ namespace smartfarm
         {
             Se_Water.Image = Resources.pump_bar;
             Se_Humi.Image = Resources.humin_bar;
-            Se_Fan.Image = Resources.fan_bar;
+            //Se_Fan.Image = Resources.fan_bar;
             Se_Temp.Image = Resources.heater_bar;
         }
 
@@ -199,7 +222,7 @@ namespace smartfarm
         {
             Se_Water.Image = Resources.pump_bar;
             Se_Humi.Image = Resources.humin_bar;
-            Se_Fan.Image = Resources.fan_bar;
+            //Se_Fan.Image = Resources.fan_bar;
             Se_Temp.Image = Resources.heater_bar;
         }
 

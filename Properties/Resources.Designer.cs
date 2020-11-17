@@ -353,6 +353,16 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static System.Drawing.Bitmap pump_period {
+            get {
+                object obj = ResourceManager.GetObject("pump_period", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static System.Drawing.Bitmap se_1 {
             get {
                 object obj = ResourceManager.GetObject("se_1", resourceCulture);
@@ -626,6 +636,16 @@ namespace smartfarm.Properties {
         internal static System.Drawing.Bitmap 자동1 {
             get {
                 object obj = ResourceManager.GetObject("자동1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 자동2 {
+            get {
+                object obj = ResourceManager.GetObject("자동2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

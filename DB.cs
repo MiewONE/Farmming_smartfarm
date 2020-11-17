@@ -205,37 +205,37 @@ namespace smartfarms
                     "dates varchar(20)" +
                     ");");
                 query_execute("create table if not exists setting (" +
-                    "temp_runtimeHH int," +
-                    "temp_runtimeMM int," +
-                    "temp_runtimeSS int," +
-                    "temp_stoptimeHH int," +
-                    "temp_stoptimeMM int," +
-                    "temp_stoptimeSS int," +//temp
-                    "humi_runtimeHH int," +
-                    "humi_runtimeMM int," +
-                    "humi_runtimeSS int," +
-                    "humi_stoptimeHH int," +
-                    "humi_stoptimeMM int," +
-                    "humi_stoptimeSS int," +//humin
-                    "water_runtimeHH int," +
-                    "water_runtimeMM int," +
-                    "water_runtimeSS int," +
-                    "water_stoptimeHH int," +
-                    "water_stoptimeMM int," +
-                    "water_stoptimeSS int," +//water
-                    "fan_runtimeHH int," +
-                    "fan_runtimeMM int," +
-                    "fan_runtimeSS int," +
-                    "fan_stoptimeHH int," +
-                    "fan_stoptimeMM int," +
-                    "fan_stoptimeSS int," +//fan
-                    "auto_TempLOW int," +
-                    "auto_TempHIGH int," +
-                    "auto_HumLOW int," +
-                    "auto_HumHIGH int," +
-                    "save_period int," +
-                    "time_inputdata int," +
-                    "PumP_period int);");
+                    "temp_runtimeHH int DEFAULT 0 ," +
+                    "temp_runtimeMM int DEFAULT 0 ," +
+                    "temp_runtimeSS int DEFAULT 0 ," +
+                    "temp_stoptimeHH int DEFAULT 0 ," +
+                    "temp_stoptimeMM int DEFAULT 0 ," +
+                    "temp_stoptimeSS int DEFAULT 0 ," +//temp
+                    "humi_runtimeHH int DEFAULT 0 ," +
+                    "humi_runtimeMM int DEFAULT 0 ," +
+                    "humi_runtimeSS int DEFAULT 0 ," +
+                    "humi_stoptimeHH int DEFAULT 0 ," +
+                    "humi_stoptimeMM int DEFAULT 0 ," +
+                    "humi_stoptimeSS int DEFAULT 0 ," +//humin
+                    "water_runtimeHH int DEFAULT 0 ," +
+                    "water_runtimeMM int DEFAULT 0 ," +
+                    "water_runtimeSS int DEFAULT 0 ," +
+                    "water_stoptimeHH int DEFAULT 0 ," +
+                    "water_stoptimeMM int DEFAULT 0 ," +
+                    "water_stoptimeSS int DEFAULT 0 ," +//water
+                    "fan_runtimeHH int DEFAULT 0 ," +
+                    "fan_runtimeMM int DEFAULT 0 ," +
+                    "fan_runtimeSS int DEFAULT 0 ," +
+                    "fan_stoptimeHH int DEFAULT 0 ," +
+                    "fan_stoptimeMM int DEFAULT 0 ," +
+                    "fan_stoptimeSS int DEFAULT 0 ," +//fan
+                    "auto_TempLOW int DEFAULT 0 ," +
+                    "auto_TempHIGH int DEFAULT 0 ," +
+                    "auto_HumLOW int DEFAULT 0 ," +
+                    "auto_HumHIGH int DEFAULT 0 ," +
+                    "save_period int DEFAULT 0 ," +
+                    "time_inputdata int DEFAULT 0 ," +
+                    "PumP_period int DEFAULT 0);");
                 #region 디비주석
                 //query = "create database if not exists `smartfarm`;";
                 //cmd = new MySqlCommand(query, dbcon);

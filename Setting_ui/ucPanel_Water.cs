@@ -33,7 +33,7 @@ namespace smartfarm.Setting_ui
 
         private void StartHH_Click(object sender, EventArgs e)
         {
-            setting_tbx(StartHH, 0, 100);
+            setting_tbx(StartHH, 0, 24);
         }
         #region SelectBox
         private void setting_tbx(TextBox tb, int _para_Low, int _para_High)
@@ -48,32 +48,17 @@ namespace smartfarm.Setting_ui
             Selectbox.Visible = true;
         }
 
-        private void Selectbox_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (tbx != null)
-                {
-                    tbx.Text = this.Selectbox.SelectedItem.ToString();
-                    tbx = null;
-                }
-                Selectbox.Visible = false;
-            }
-            catch
-            {
-                MessageBox.Show("숫자를 눌러주시기 바랍니다", "확인");
-            }
-        }
+
         #endregion
 
         private void StartMM_Click(object sender, EventArgs e)
         {
-            setting_tbx(StartMM, 0, 100);
+            //setting_tbx(StartMM, 0, 100);
         }
 
         private void StartSS_Click(object sender, EventArgs e)
         {
-            setting_tbx(StartSS, 0, 100);
+            //setting_tbx(StartSS, 0, 100);
         }
 
         //private void StopHH_Click(object sender, EventArgs e)
@@ -94,7 +79,7 @@ namespace smartfarm.Setting_ui
         private void StartHH_TextChanged(object sender, EventArgs e)
         {
             // -- 공급 주기 시간
-            //variable.instance.pump = Convert.ToInt32(HighHumidity.Text);
+            variable.instance.Pump_period = Convert.ToInt32(StartHH.Text)*60*60;
         }
 
         private void StartMM_TextChanged(object sender, EventArgs e)
@@ -120,6 +105,33 @@ namespace smartfarm.Setting_ui
         private void StopSS_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Selectbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Selectbox_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tbx != null)
+                {
+                    tbx.Text = this.Selectbox.SelectedItem.ToString();
+                    tbx = null;
+                }
+                Selectbox.Visible = false;
+            }
+            catch
+            {
+                MessageBox.Show("숫자를 눌러주시기 바랍니다", "확인");
+            }
+        }
+
+        private void ucPanel_Water_Load(object sender, EventArgs e)
+        {
+            StartHH.Text = (variable.instance.Pump_period/3600).ToString();
         }
     }
 }

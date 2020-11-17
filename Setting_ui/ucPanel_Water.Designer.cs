@@ -28,44 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucPanel_Water));
-            this.StartSS = new System.Windows.Forms.TextBox();
-            this.StartMM = new System.Windows.Forms.TextBox();
             this.StartHH = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Selectbox = new System.Windows.Forms.ListBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // StartSS
-            // 
-            this.StartSS.BackColor = System.Drawing.SystemColors.Control;
-            this.StartSS.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartSS.Location = new System.Drawing.Point(493, 140);
-            this.StartSS.Multiline = true;
-            this.StartSS.Name = "StartSS";
-            this.StartSS.Size = new System.Drawing.Size(58, 42);
-            this.StartSS.TabIndex = 35;
-            this.StartSS.Text = "0";
-            this.StartSS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.StartSS.Click += new System.EventHandler(this.StartSS_Click);
-            this.StartSS.TextChanged += new System.EventHandler(this.StartSS_TextChanged);
-            // 
-            // StartMM
-            // 
-            this.StartMM.BackColor = System.Drawing.SystemColors.Control;
-            this.StartMM.Font = new System.Drawing.Font("굴림", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.StartMM.Location = new System.Drawing.Point(376, 140);
-            this.StartMM.Multiline = true;
-            this.StartMM.Name = "StartMM";
-            this.StartMM.Size = new System.Drawing.Size(58, 42);
-            this.StartMM.TabIndex = 37;
-            this.StartMM.Text = "0";
-            this.StartMM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.StartMM.Click += new System.EventHandler(this.StartMM_Click);
-            this.StartMM.TextChanged += new System.EventHandler(this.StartMM_TextChanged);
             // 
             // StartHH
             // 
@@ -81,15 +50,6 @@
             this.StartHH.Click += new System.EventHandler(this.StartHH_Click);
             this.StartHH.TextChanged += new System.EventHandler(this.StartHH_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(64, 135);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(673, 50);
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            // 
             // Selectbox
             // 
             this.Selectbox.Font = new System.Drawing.Font("굴림", 30F);
@@ -100,15 +60,26 @@
             this.Selectbox.Name = "Selectbox";
             this.Selectbox.Size = new System.Drawing.Size(68, 4);
             this.Selectbox.TabIndex = 40;
+            this.Selectbox.Click += new System.EventHandler(this.Selectbox_Click_1);
+            this.Selectbox.SelectedIndexChanged += new System.EventHandler(this.Selectbox_SelectedIndexChanged);
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Image = global::smartfarm.Properties.Resources.자동2;
             this.pictureBox6.Location = new System.Drawing.Point(64, 94);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(100, 35);
             this.pictureBox6.TabIndex = 41;
             this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::smartfarm.Properties.Resources.pump_period;
+            this.pictureBox1.Location = new System.Drawing.Point(64, 135);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(673, 50);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
             // 
             // ucPanel_Water
             // 
@@ -117,22 +88,19 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.Selectbox);
-            this.Controls.Add(this.StartSS);
-            this.Controls.Add(this.StartMM);
             this.Controls.Add(this.StartHH);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucPanel_Water";
             this.Size = new System.Drawing.Size(800, 335);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.ucPanel_Water_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox StartSS;
-        private System.Windows.Forms.TextBox StartMM;
         private System.Windows.Forms.TextBox StartHH;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox Selectbox;
