@@ -127,10 +127,10 @@ namespace smartfarm
             //_buttons.Add(//GPIO.Output19.IsOn, pb_pump);
             //_buttons.Add(//GPIO.Output20.IsOn, pb_fan);
 
-            //foreach(var off in //GPIO.Outputs)
-            //{
-            //    off.IsOn = false;
-            //}
+            foreach (var off in GPIO.Outputs)
+            {
+                off.IsOn = false;
+            }
             //DB에 연결하여 지금 자동 상태인지, 수동상태인지 체크 후 표시 구현중에서는 variable값 참고하여하기
             if (variable.instance.Mode == true)//수동 false, 자동 true
             {
@@ -387,11 +387,15 @@ namespace smartfarm
             }
             lb_temp.Text = variable.instance.temp_value.ToString() + "℃";
             lb_humi.Text = variable.instance.humi_value.ToString() + "%";
-            DB.Instance.query_execute($"insert into save_state values(" +
+            if(variable.instance.temp_value!=0&& variable.instance.humi_value != 0)
+            {
+                DB.Instance.query_execute($"insert into save_state values(" +
                 $"{variable.instance.temp_value}," +
                 $"{variable.instance.humi_value}," +
                 $"{variable.instance.fan}," +
                 $"{variable.instance.pump},now());");
+            }
+            
         }
 
         private void pb_graph_Click(object sender, EventArgs e)

@@ -51,13 +51,13 @@ namespace smartfarm
 
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
-            pictureBox3.Image = Resources.닫기;
+            //pictureBox3.Image = Resources.닫기;
             this.Close();
         }
 
         private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
         {
-            pictureBox3.Image = Resources.닫기Push;
+            //pictureBox3.Image = Resources.닫기Push;
         }
 
         private void data_Load(object sender, EventArgs e)
@@ -122,6 +122,11 @@ namespace smartfarm
                 else
                     ucl_etc.instance.BringToFront();
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -242,6 +242,14 @@ namespace smartfarm
         private void setting_Load(object sender, EventArgs e)
         {
             //DB.Instance.query_execute("select * from setting", "select");
+            if (!pl_UIback.Controls.Contains(ucPanel_temp.instance))
+            {
+                pl_UIback.Controls.Add(ucPanel_temp.instance);
+                ucPanel_temp.instance.Dock = DockStyle.Fill;
+                ucPanel_temp.instance.BringToFront();
+            }
+            else
+                ucPanel_temp.instance.BringToFront();
         }
     }
 }
