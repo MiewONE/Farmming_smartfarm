@@ -49,42 +49,42 @@ namespace smartfarm.Setting_ui
         private void StartHH_TextChanged(object sender, EventArgs e)
         {
             //DB.Instance.query_execute($"update setting set humi_runTimeHH = {StartHH.Text};");
-            variable.instance.humi_runTimeHH = Convert.ToInt32(StartHH.Text);
+            setting.instance.humiStartHH = Convert.ToInt32(StartHH.Text);
         }
 
         private void StartMM_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.humi_runTimeMM = Convert.ToInt32(StartMM.Text);
+            setting.instance.humiStartMM = Convert.ToInt32(StartMM.Text);
         }
 
         private void StartSS_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.humi_runTimeSS = Convert.ToInt32(StartSS.Text);
+           setting.instance.humiStartSS  = Convert.ToInt32(StartSS.Text);
         }
 
         private void StopHH_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.humi_stoptimeHH = Convert.ToInt32(StopHH.Text);
+            setting.instance.humiStopHH = Convert.ToInt32(StopHH.Text);
         }
 
         private void StopMM_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.humi_stoptimeMM = Convert.ToInt32(StopMM.Text);
+            setting.instance.humiStopMM= Convert.ToInt32(StopMM.Text);
         }
 
         private void StopSS_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.humi_stoptimeSS = Convert.ToInt32(StopSS.Text);
+            setting.instance.humiStopSs = Convert.ToInt32(StopSS.Text);
         }
 
         private void LowHumidity_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.auto_HumLOW = Convert.ToInt32(LowHumidity.Text);
+            setting.instance.lowHumi = Convert.ToInt32(LowHumidity.Text);
         }
 
         private void HighHumidity_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.auto_HumHIGH = Convert.ToInt32(HighHumidity.Text);
+            setting.instance.highHumi = Convert.ToInt32(HighHumidity.Text);
         }
 
         private void StartHH_Click(object sender, EventArgs e)

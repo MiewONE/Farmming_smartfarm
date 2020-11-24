@@ -33,7 +33,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.plin_humin = new System.Windows.Forms.Panel();
             this.pb_humini = new System.Windows.Forms.PictureBox();
-            this.lb_humi_tm = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pb_humi = new System.Windows.Forms.PictureBox();
@@ -41,7 +40,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pb_temp = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lb_temp_tm = new System.Windows.Forms.Label();
             this.plin_heater = new System.Windows.Forms.Panel();
             this.pb_temper = new System.Windows.Forms.PictureBox();
             this.pl_heater = new System.Windows.Forms.Panel();
@@ -65,7 +63,6 @@
             this.pb_fan = new System.Windows.Forms.PictureBox();
             this.pb_pan = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lb_fan_tm = new System.Windows.Forms.Label();
             this.pl_temp = new System.Windows.Forms.Panel();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
@@ -88,6 +85,8 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pb_setting = new System.Windows.Forms.PictureBox();
             this.pb_btn_setting = new System.Windows.Forms.PictureBox();
+            this.temp_time = new System.Windows.Forms.Timer(this.components);
+            this.humi_time = new System.Windows.Forms.Timer(this.components);
             this.plin_humin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_humini)).BeginInit();
             this.panel4.SuspendLayout();
@@ -144,7 +143,6 @@
             // plin_humin
             // 
             this.plin_humin.Controls.Add(this.pb_humini);
-            this.plin_humin.Controls.Add(this.lb_humi_tm);
             this.plin_humin.Controls.Add(this.label5);
             this.plin_humin.Controls.Add(this.panel4);
             this.plin_humin.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -162,24 +160,12 @@
             this.pb_humini.TabIndex = 115;
             this.pb_humini.TabStop = false;
             // 
-            // lb_humi_tm
-            // 
-            this.lb_humi_tm.BackColor = System.Drawing.SystemColors.Control;
-            this.lb_humi_tm.Font = new System.Drawing.Font("굴림", 21F);
-            this.lb_humi_tm.ForeColor = System.Drawing.Color.Black;
-            this.lb_humi_tm.Location = new System.Drawing.Point(68, 55);
-            this.lb_humi_tm.Name = "lb_humi_tm";
-            this.lb_humi_tm.Size = new System.Drawing.Size(126, 33);
-            this.lb_humi_tm.TabIndex = 114;
-            this.lb_humi_tm.Text = "00:00:00";
-            this.lb_humi_tm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(92, 11);
+            this.label5.Location = new System.Drawing.Point(82, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 36);
             this.label5.TabIndex = 113;
@@ -241,31 +227,18 @@
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(92, 11);
+            this.label1.Location = new System.Drawing.Point(82, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 36);
             this.label1.TabIndex = 113;
             this.label1.Text = "난방기";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lb_temp_tm
-            // 
-            this.lb_temp_tm.BackColor = System.Drawing.SystemColors.Control;
-            this.lb_temp_tm.Font = new System.Drawing.Font("굴림", 21F);
-            this.lb_temp_tm.ForeColor = System.Drawing.Color.Black;
-            this.lb_temp_tm.Location = new System.Drawing.Point(68, 55);
-            this.lb_temp_tm.Name = "lb_temp_tm";
-            this.lb_temp_tm.Size = new System.Drawing.Size(126, 33);
-            this.lb_temp_tm.TabIndex = 114;
-            this.lb_temp_tm.Text = "00:00:00";
-            this.lb_temp_tm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // plin_heater
             // 
             this.plin_heater.Controls.Add(this.panel5);
             this.plin_heater.Controls.Add(this.pb_temper);
             this.plin_heater.Controls.Add(this.label1);
-            this.plin_heater.Controls.Add(this.lb_temp_tm);
             this.plin_heater.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plin_heater.Location = new System.Drawing.Point(0, 0);
             this.plin_heater.Name = "plin_heater";
@@ -305,16 +278,16 @@
             // 
             this.panel7.Controls.Add(this.button1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(212, 0);
+            this.panel7.Location = new System.Drawing.Point(202, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(59, 98);
+            this.panel7.Size = new System.Drawing.Size(69, 98);
             this.panel7.TabIndex = 117;
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(0, 29);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 44);
+            this.button1.Size = new System.Drawing.Size(70, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "공급";
             this.button1.UseVisualStyleBackColor = true;
@@ -456,7 +429,6 @@
             this.plin_fan.Controls.Add(this.panel6);
             this.plin_fan.Controls.Add(this.pb_pan);
             this.plin_fan.Controls.Add(this.label2);
-            this.plin_fan.Controls.Add(this.lb_fan_tm);
             this.plin_fan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plin_fan.Location = new System.Drawing.Point(0, 0);
             this.plin_fan.Name = "plin_fan";
@@ -497,24 +469,12 @@
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(82, 20);
+            this.label2.Location = new System.Drawing.Point(82, 33);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 36);
             this.label2.TabIndex = 113;
             this.label2.Text = "펜";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lb_fan_tm
-            // 
-            this.lb_fan_tm.BackColor = System.Drawing.SystemColors.Control;
-            this.lb_fan_tm.Font = new System.Drawing.Font("굴림", 21F);
-            this.lb_fan_tm.ForeColor = System.Drawing.Color.Black;
-            this.lb_fan_tm.Location = new System.Drawing.Point(68, 62);
-            this.lb_fan_tm.Name = "lb_fan_tm";
-            this.lb_fan_tm.Size = new System.Drawing.Size(126, 33);
-            this.lb_fan_tm.TabIndex = 114;
-            this.lb_fan_tm.Text = "00:00:00";
-            this.lb_fan_tm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pl_temp
             // 
@@ -564,6 +524,7 @@
             this.tbar_humi.Name = "tbar_humi";
             this.tbar_humi.Size = new System.Drawing.Size(137, 45);
             this.tbar_humi.TabIndex = 141;
+            this.tbar_humi.Visible = false;
             this.tbar_humi.ValueChanged += new System.EventHandler(this.tbar_humi_ValueChanged);
             // 
             // tbar_temp
@@ -572,6 +533,7 @@
             this.tbar_temp.Name = "tbar_temp";
             this.tbar_temp.Size = new System.Drawing.Size(137, 45);
             this.tbar_temp.TabIndex = 142;
+            this.tbar_temp.Visible = false;
             this.tbar_temp.ValueChanged += new System.EventHandler(this.tbar_temp_ValueChanged);
             // 
             // lb_tbar_temp
@@ -582,6 +544,7 @@
             this.lb_tbar_temp.Size = new System.Drawing.Size(29, 12);
             this.lb_tbar_temp.TabIndex = 143;
             this.lb_tbar_temp.Text = "온도";
+            this.lb_tbar_temp.Visible = false;
             // 
             // lb_tbar_humi
             // 
@@ -591,6 +554,7 @@
             this.lb_tbar_humi.Size = new System.Drawing.Size(29, 12);
             this.lb_tbar_humi.TabIndex = 144;
             this.lb_tbar_humi.Text = "습도";
+            this.lb_tbar_humi.Visible = false;
             // 
             // timer_pump
             // 
@@ -622,6 +586,7 @@
             this.pictureBox17.Size = new System.Drawing.Size(100, 50);
             this.pictureBox17.TabIndex = 123;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pb_logo
             // 
@@ -715,6 +680,16 @@
             this.pb_btn_setting.Size = new System.Drawing.Size(44, 47);
             this.pb_btn_setting.TabIndex = 126;
             this.pb_btn_setting.TabStop = false;
+            // 
+            // temp_time
+            // 
+            this.temp_time.Interval = 1000000;
+            this.temp_time.Tick += new System.EventHandler(this.temp_time_Tick);
+            // 
+            // humi_time
+            // 
+            this.humi_time.Interval = 1000000;
+            this.humi_time.Tick += new System.EventHandler(this.humi_time_Tick);
             // 
             // frm_Main
             // 
@@ -811,13 +786,11 @@
         private System.Windows.Forms.PictureBox pb_logo;
         private System.Windows.Forms.PictureBox pb_title;
         private System.Windows.Forms.Panel plin_humin;
-        private System.Windows.Forms.Label lb_humi_tm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel pl_humi;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lb_temp_tm;
         private System.Windows.Forms.Panel plin_heater;
         private System.Windows.Forms.Panel pl_heater;
         private System.Windows.Forms.PictureBox pb_auto;
@@ -837,7 +810,6 @@
         private System.Windows.Forms.Panel plin_fan;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lb_fan_tm;
         private System.Windows.Forms.PictureBox pb_btn_setting;
         private System.Windows.Forms.Panel pl_temp;
         private System.Windows.Forms.PictureBox pb_humi;
@@ -853,6 +825,8 @@
         private System.Windows.Forms.Timer timer_pump;
         private System.Windows.Forms.Timer tm_stopwatch;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer temp_time;
+        private System.Windows.Forms.Timer humi_time;
     }
 }
 

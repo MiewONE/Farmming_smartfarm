@@ -70,28 +70,7 @@ namespace smartfarm.pl_data
             //plots.AxisX.ScaleView.Zoom(dateTime[0].ToOADate(), dateTime[1].ToOADate());
             //RedrawxLabel(dateTime[0], dateTime[1]);
         }
-        private void RedrawxLabel(DateTime dtMin, DateTime dtMax)
-        {
-            ChartArea plots = chart1.ChartAreas[0];
-            TimeSpan dtDiff = dtMax.Subtract(dtMin);
-            if (dtDiff.TotalDays > 365)
-            {
-                plots.AxisX.LabelStyle.Format = "yyyy";
-            }
-            else if (dtDiff.TotalDays > 30)
-            {
-                plots.AxisX.LabelStyle.Format = "yyyy-MM";
-            }
-            else if (dtDiff.TotalDays > 2)
-            {
-                plots.AxisX.LabelStyle.Format = "yyyy-MM-dd";
-            }
-            else if (dtDiff.TotalDays < 1)
-            {
-                plots.AxisX.LabelStyle.Format = "yyyy-MM-dd  HH:mm:ss";
-            }
 
-        }
 
         private void ucl_temp_Load(object sender, EventArgs e)
         {

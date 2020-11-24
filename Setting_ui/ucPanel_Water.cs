@@ -79,7 +79,8 @@ namespace smartfarm.Setting_ui
         private void StartHH_TextChanged(object sender, EventArgs e)
         {
             // -- 공급 주기 시간
-            variable.instance.Pump_period = Convert.ToInt32(StartHH.Text)*60*60;
+            //variable.instance.Pump_period = Convert.ToInt32(StartHH.Text)*60*60;
+            setting.instance.pumpPeriod = Convert.ToInt32(StartHH.Text) * 60 * 60;
         }
 
         private void StartMM_TextChanged(object sender, EventArgs e)

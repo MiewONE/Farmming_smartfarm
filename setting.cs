@@ -16,6 +16,23 @@ namespace smartfarm
     public partial class setting : Form
     {
         private static setting Instance;
+        public int lowTemp { get; set; }
+        public int hightemp { get; set; }
+        public int tempStartHH { get; set; }
+        public int tempStartMM { get; set; }
+        public int tempStartSS { get; set; }
+        public int tempStopHH { get; set; }
+        public int tempStopMM { get; set; }
+        public int tempStopSs { get; set; }
+        public int lowHumi { get; set; }
+        public int highHumi { get; set; }
+        public int humiStartHH { get; set; }
+        public int humiStartMM { get; set; }
+        public int humiStartSS { get; set; }
+        public int humiStopHH { get; set; }
+        public int humiStopMM { get; set; }
+        public int humiStopSs { get; set; }
+        public int pumpPeriod { get; set; }
         List<Image> icons = new List<Image>();
         public static setting instance
         {
@@ -33,6 +50,7 @@ namespace smartfarm
             InitializeComponent();
             icons.Add(Resources.펌프_bar);
         }
+
 
         private void pb_temp_MouseUp(object sender, MouseEventArgs e)
         {
@@ -135,6 +153,25 @@ namespace smartfarm
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
             pictureBox2.Image = Resources.apply;
+
+            variable.instance.auto_TempLOW = this.lowTemp;
+            variable.instance.auto_TempHIGH = this.hightemp;
+            variable.instance.temp_runTimeMM = this.tempStartHH;
+            variable.instance.temp_runTimeHH = this.tempStartMM;
+            variable.instance.temp_runTimeSS = this.tempStartSS;
+            variable.instance.temp_stoptimeHH = this.tempStopHH;
+            variable.instance.temp_stoptimeMM = this.tempStopMM;
+            variable.instance.temp_stoptimeSS = this.tempStopSs;
+            variable.instance.humi_runTimeHH = this.humiStartHH;
+            variable.instance.humi_runTimeMM = this.humiStartMM;
+            variable.instance.humi_runTimeSS = this.humiStartSS;
+            variable.instance.humi_stoptimeHH = this.humiStopHH;
+            variable.instance.humi_stoptimeMM = this.humiStopMM;
+            variable.instance.humi_stoptimeSS = this.humiStopSs;
+            variable.instance.auto_HumLOW = this.lowHumi;
+            variable.instance.auto_HumHIGH = this.highHumi;
+            variable.instance.Pump_period = this.pumpPeriod;
+
             //db 세팅 저장
             DB.Instance.query_execute("update setting set " +
                 $"auto_HumLOW = {variable.instance.auto_HumLOW}," +

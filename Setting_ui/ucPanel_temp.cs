@@ -34,12 +34,12 @@ namespace smartfarm.Setting_ui
 
         private void LowTemperature_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.auto_TempLOW = Convert.ToInt32(LowTemperature.Text);
+            setting.instance.lowTemp = Convert.ToInt32(LowTemperature.Text);
         }
 
         private void HighTemperature_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.auto_TempHIGH = Convert.ToInt32(HighTemperature.Text);
+           setting.instance.hightemp  = Convert.ToInt32(HighTemperature.Text);
         }
 
         private void LowTemperature_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace smartfarm.Setting_ui
 
         private void StartMM_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_runTimeMM = Convert.ToInt32(StartMM.Text);
+           setting.instance.tempStartMM  = Convert.ToInt32(StartMM.Text);
         }
 
         private void StartHH_Click(object sender, EventArgs e)
@@ -121,27 +121,27 @@ namespace smartfarm.Setting_ui
 
         private void StopHH_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_stoptimeHH = Convert.ToInt32(StopHH.Text);
+           setting.instance.tempStopHH = Convert.ToInt32(StopHH.Text);
         }
 
         private void StopMM_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_stoptimeMM = Convert.ToInt32(StopMM.Text);
+            setting.instance.tempStopMM = Convert.ToInt32(StopMM.Text);
         }
 
         private void StopSS_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_stoptimeSS = Convert.ToInt32(StopSS.Text);
+            setting.instance.tempStopSs = Convert.ToInt32(StopSS.Text);
         }
 
         private void StartHH_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_runTimeHH = Convert.ToInt32(StartHH.Text);
+            setting.instance.tempStartHH = Convert.ToInt32(StartHH.Text);
         }
 
         private void StartSS_TextChanged(object sender, EventArgs e)
         {
-            variable.instance.temp_runTimeSS = Convert.ToInt32(StartSS.Text);
+            setting.instance.tempStartSS = Convert.ToInt32(StartSS.Text);
         }
 
         private void ucPanel_temp_Load(object sender, EventArgs e)
