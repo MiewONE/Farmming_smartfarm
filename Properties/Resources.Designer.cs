@@ -323,9 +323,19 @@ namespace smartfarm.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap pan_on {
+        internal static System.Drawing.Bitmap pan_on1 {
             get {
-                object obj = ResourceManager.GetObject("pan_on", resourceCulture);
+                object obj = ResourceManager.GetObject("pan_on1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap pan_on2 {
+            get {
+                object obj = ResourceManager.GetObject("pan_on2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +476,16 @@ namespace smartfarm.Properties {
         internal static System.Drawing.Bitmap 가습기_ON {
             get {
                 object obj = ResourceManager.GetObject("가습기_ON", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static System.Drawing.Bitmap 가습기_ON1 {
+            get {
+                object obj = ResourceManager.GetObject("가습기_ON1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

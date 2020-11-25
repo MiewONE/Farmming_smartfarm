@@ -12,6 +12,7 @@ using System.Diagnostics;
 using smartfarms;
 using System.Threading;
 
+
 namespace smartfarm
 {
     public partial class frm_Main : Form
@@ -61,7 +62,7 @@ namespace smartfarm
             //TmpTimer.Elapsed += new ElapsedEventHandler(TmpTimer_Elapsed);
             //TmpTimer.Start();
             timer1.Start();
-            timer_pump.Interval = (int)variable.instance.Pump_period<1000*60?1000*60*60*24: (int)variable.instance.Pump_period;
+            timer_pump.Interval = (int)variable.instance.Pump_period<1000*60?1000*60*60*24: (int)variable.instance.Pump_period * 1000;
             tm_stopwatch.Start();
         }
 
@@ -129,6 +130,19 @@ namespace smartfarm
             //    off.IsOn = false;
             //}
             //DB에 연결하여 지금 자동 상태인지, 수동상태인지 체크 후 표시 구현중에서는 variable값 참고하여하기
+            using (StreamReader file = File.OpenText("../tmpHumi.txt"))
+            {
+                string s = file.ReadToEnd();
+                if (s.Length > 1)
+                {
+                    string[] sp = s.Split(',');
+                    variable.instance.temp_value = float.Parse(sp[0]);
+                    variable.instance.humi_value = float.Parse(sp[1]);
+                }
+
+            }
+            lb_temp.Text = variable.instance.temp_value.ToString() + "℃";
+            lb_humi.Text = variable.instance.humi_value.ToString() + "%";
             if (variable.instance.Mode == true)//수동 false, 자동 true
             {
                 pb_auto.Image = Resources.자동;
@@ -188,6 +202,7 @@ namespace smartfarm
 
         private void pb_humi_MouseUp(object sender, MouseEventArgs e)
         {
+            pb_humi.Enabled = !pb_humi.Enabled;
             if (variable.instance.humin)
             {
                 pb_humi.Image = Resources.btn_off;
@@ -199,22 +214,37 @@ namespace smartfarm
                 pb_humi.Image = Resources.btn_on;
                 GPIO.Output20.IsOn = true;
                 humi_time.Interval = (int)(
-                    (variable.instance.humi_runTimeHH * 60 * 60) + 
-                    (variable.instance.humi_runTimeMM * 60) + 
+                    (variable.instance.humi_runTimeHH * 60 * 60) +
+                    (variable.instance.humi_runTimeMM * 60) +
                     (variable.instance.humi_runTimeSS)
-                    )<3600?3600: 
+                    ) == 0 ?
+                    3600*1000
+                    : 
                     (int)(
                     (variable.instance.humi_runTimeHH * 60 * 60) + 
                     (variable.instance.humi_runTimeMM * 60) +
                     (variable.instance.humi_runTimeSS)
-                    );
+                    ) * 1000;
+                if (humi_time.Interval==3600*1000)
+                {
+                    MessageBox.Show("설정이 되어 있지않아 기본 1시간 후 종료됩니다.");
+                }
+                else
+                {
+                    MessageBox.Show(variable.instance.humi_runTimeHH + "시간"
+                    + variable.instance.humi_runTimeMM + "분"
+                    + variable.instance.humi_runTimeSS + "초"
+                    + "후 종료됩니다.");
+                }
+                
+                if (humi_time.Enabled) { humi_time.Stop(); }
                 humi_time.Start();
                 
                 //MessageBox.Show("20번 핀 작동");
                 
             }
             variable.instance.humin = !variable.instance.humin;
-            
+            pb_humi.Enabled = !pb_humi.Enabled;
         }
 
         private void pb_temp_MouseDown(object sender, MouseEventArgs e)
@@ -231,6 +261,7 @@ namespace smartfarm
 
         private void pb_temp_MouseUp(object sender, MouseEventArgs e)
         {
+            pb_temp.Enabled = !pb_temp.Enabled;
             if (variable.instance.temp)
             {
                 pb_temp.Image = Resources.btn_off;
@@ -245,17 +276,31 @@ namespace smartfarm
                     (variable.instance.temp_runTimeHH * 60 * 60) + 
                     (variable.instance.temp_runTimeMM * 60) + 
                     (variable.instance.temp_runTimeSS)
-                    )<3600?
-                    3600:
+                    )==0?
+                    3600*1000:
                     (int)(
                     (variable.instance.temp_runTimeHH * 60 * 60) +
                     (variable.instance.temp_runTimeMM * 60) +
-                    (variable.instance.temp_runTimeSS)
+                    (variable.instance.temp_runTimeSS)*1000
                     );
+
+                if (temp_time.Interval == 3600 * 1000)
+                {
+                    MessageBox.Show("설정이 되어 있지않아 기본 1시간 후 종료됩니다.");
+                }
+                else
+                {
+                    MessageBox.Show(variable.instance.temp_runTimeHH + "시간"
+                    + variable.instance.temp_runTimeMM + "분"
+                    + variable.instance.temp_runTimeSS + "초"
+                    + "후 종료됩니다.");
+                }
+                if (temp_time.Enabled) temp_time.Stop();
                 temp_time.Start();
                 //MessageBox.Show("19번 핀 작동");
             }
             variable.instance.temp = !variable.instance.temp;
+            pb_temp.Enabled = !pb_temp.Enabled;
         }
 
         private void pb_fan_MouseDown(object sender, MouseEventArgs e)
@@ -341,7 +386,9 @@ namespace smartfarm
                 panel4.Visible = false;
                 panel5.Visible = false;
 
-                timer_pump.Interval = (int)variable.instance.Pump_period<1?1000 : (int)variable.instance.Pump_period;
+                timer_pump.Interval = (int)variable.instance.Pump_period<10?7200 * 1000 : (int)variable.instance.Pump_period * 1000;
+                MessageBox.Show("물 자동 공급 주기는 "+ (timer_pump.Interval/1000)/3600+"시간 입니다");
+                if (bk_water.IsBusy) bk_water.Dispose();
                 timer_pump.Start();
                 tm_input.Start();
 
@@ -404,6 +451,7 @@ namespace smartfarm
             }
             lb_temp.Text = variable.instance.temp_value.ToString() + "℃";
             lb_humi.Text = variable.instance.humi_value.ToString() + "%";
+            //MessageBox.Show(variable.instance.temp_value+"/"+ variable.instance.humi_value+"/"+ variable.instance.fan+"/"+variable.instance.pump);
             if (variable.instance.temp_value != 0 && variable.instance.humi_value != 0)
             {
                 DB.Instance.query_execute($"insert into save_state values(" +
@@ -442,14 +490,25 @@ namespace smartfarm
             {
                 if (variable.instance.temp_value < variable.instance.auto_TempLOW) // 현재 온도가 설정한 최하온도보다 낮으면 
                 {
-                    
+                    //if (GPIO.Output21.IsOn && variable.instance.fan)
+                    //{
+                    //    variable.instance.fan = !variable.instance.fan;
+                    //    GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                    //    pb_pan.Image = Resources.pan_off;
+                    //}
                     variable.instance.temp = true;
                     pb_temper.Image = Resources.히터_ON;
                     GPIO.Output19.IsOn = true; // 난방기 작동
                     //MessageBox.Show("19번 핀 작동");
                 }else if(variable.instance.temp_value > variable.instance.auto_TempLOW)
                 {
-                    variable.instance.temp = false;
+                    //if (GPIO.Output21.IsOn && variable.instance.fan)
+                    //{
+                    //    variable.instance.fan = !variable.instance.fan;
+                    //    GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                    //    pb_pan.Image = Resources.pan_off;
+                    //}
+                    //variable.instance.temp = false;
                     pb_temper.Image = Resources.히터_OFF;
                     GPIO.Output19.IsOn = false; // 난방기 작동
                     //MessageBox.Show("19번 핀 작동");
@@ -463,49 +522,64 @@ namespace smartfarm
                     variable.instance.fan = true;
                     GPIO.Output21.IsOn = true; // 팬 작동
                     //MessageBox.Show("21번 핀 작동");
-                    pb_pan.Image = Resources.pan_on;
+                    pb_pan.Image = Resources.pan_on1;
                 }
-                else
-                {
-                    variable.instance.temp = true;
-                    GPIO.Output19.IsOn = true; // 난방기 오프
-                    //MessageBox.Show("19번 핀 작동");
-                    pb_temper.Image = Resources.히터_ON;
-                    variable.instance.fan = false;
-                    GPIO.Output21.IsOn = false; // 팬 작동
-                    //MessageBox.Show("21번 핀 작동");
-                    pb_pan.Image = Resources.pan_off;
-                }
+                //else
+                //{
+                //    variable.instance.temp = true;
+                //    GPIO.Output19.IsOn = true; // 난방기 오프
+                //    //MessageBox.Show("19번 핀 작동");
+                //    pb_temper.Image = Resources.히터_ON;
+                //    variable.instance.fan = false;
+                //    GPIO.Output21.IsOn = false; // 팬 작동
+                //    //MessageBox.Show("21번 핀 작동");
+                //    pb_pan.Image = Resources.pan_off;
+                //}
                 if (variable.instance.humi_value < variable.instance.auto_HumLOW) // 현재 습도가 설정한 최하습도보다 낮으면
                 {
-                    variable.instance.humin= true;
+                    //if (GPIO.Output21.IsOn && variable.instance.fan)
+                    //{
+                    //    variable.instance.fan = !variable.instance.fan;
+                    //    GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                    //    pb_pan.Image = Resources.pan_off;
+                    //}
+                    variable.instance.humin = true;
+                    pb_humini.Image = Resources.가습기_ON1;
                     GPIO.Output20.IsOn = true; // 가습기 작동
                     //MessageBox.Show("20번 핀 작동");
                 }
                 else
                 {
+                    if (GPIO.Output21.IsOn && variable.instance.fan)
+                    {
+                        variable.instance.fan = !variable.instance.fan;
+                        GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                        pb_pan.Image = Resources.pan_off;
+                    }
                     variable.instance.humin = false;
+                    pb_humini.Image = Resources.가습기_ON;
                     GPIO.Output20.IsOn = false; // 가습기 작동
                     //MessageBox.Show("20번 핀 작동");
                 }
                 if (variable.instance.humi_value > variable.instance.auto_HumHIGH) // 높으면
                 {
                     variable.instance.humin = false;
-                    variable.instance.fan = true;
+                    
                     GPIO.Output20.IsOn = false; // 가습기 오프
                     //MessageBox.Show("20번 핀 작동");
+                    variable.instance.fan = true;
                     GPIO.Output21.IsOn = true; // 팬작동
                     //MessageBox.Show("21번 핀 작동");
                 }
-                else
-                {
-                    variable.instance.humin = true;
-                    variable.instance.fan = false;
-                    GPIO.Output20.IsOn = true; // 가습기 오프
-                    //MessageBox.Show("20번 핀 작동");
-                    GPIO.Output21.IsOn = false; // 팬작동
-                    //MessageBox.Show("21번 핀 작동");
-                }
+                //else
+                //{
+                //    variable.instance.humin = true;
+                //    variable.instance.fan = false;
+                //    GPIO.Output20.IsOn = true; // 가습기 오프
+                //    //MessageBox.Show("20번 핀 작동");
+                //    GPIO.Output21.IsOn = false; // 팬작동
+                //    //MessageBox.Show("21번 핀 작동");
+                //}
                 //else
                 //{
                 //    variable.instance.temp = false;
@@ -517,6 +591,28 @@ namespace smartfarm
                 //    GPIO.Output19.IsOn = false;
                 //    GPIO.Output22.IsOn = false;
                 //}
+                if(variable.instance.temp_value>variable.instance.auto_TempHIGH&&
+                    variable.instance.humi_value>variable.instance.auto_HumHIGH)
+                {
+                    pb_pan.Image = Resources.pan_on1;
+                    variable.instance.fan = true;
+                    GPIO.Output21.IsOn = true; // 팬작동
+                    //if (GPIO.Output21.IsOn && variable.instance.fan)
+                    //{
+                    //    variable.instance.fan = !variable.instance.fan;
+                    //    GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                    //    pb_pan.Image = Resources.pan_off;
+                    //}
+                }
+                else
+                {
+                    if (GPIO.Output21.IsOn && variable.instance.fan)
+                    {
+                        variable.instance.fan = !variable.instance.fan;
+                        GPIO.Output21.IsOn = !GPIO.Output21.IsOn;
+                        pb_pan.Image = Resources.pan_off;
+                    }
+                }
             }
                 
             
@@ -525,11 +621,12 @@ namespace smartfarm
 
         private void timer_pump_Tick(object sender, EventArgs e)
         {
-            GPIO.Output22.IsOn = true;
-            //MessageBox.Show("22번 핀 작동");
-            Thread.Sleep(1000 * 3);
-            GPIO.Output22.IsOn = false;
-            //MessageBox.Show("22번 핀 작동");
+            bk_water.RunWorkerAsync();
+            //GPIO.Output22.IsOn = true;
+            ////MessageBox.Show("22번 핀 작동");
+            //Thread.Sleep(1000 * 3);
+            //GPIO.Output22.IsOn = false;
+            ////MessageBox.Show("22번 핀 작동");
         }
 
         private void tm_stopwatch_Tick(object sender, EventArgs e)
@@ -566,12 +663,14 @@ namespace smartfarm
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //GPIO.Output19.IsOn = true; // 난방기 작동
-            GPIO.Output22.IsOn = true;
-            //MessageBox.Show("22번 핀 작동");
-            Thread.Sleep(1000 * 3);
-            GPIO.Output22.IsOn = false;
-            //MessageBox.Show("22번 핀 작동");
+            button1.Enabled = !button1.Enabled;
+            bk_water.RunWorkerAsync();
+            ////GPIO.Output19.IsOn = true; // 난방기 작동
+            //GPIO.Output22.IsOn = true;
+            ////MessageBox.Show("22번 핀 작동");
+            //Thread.Sleep(1000 * 3);
+            //GPIO.Output22.IsOn = false;
+            ////MessageBox.Show("22번 핀 작동");
         }
 
         private void pictureBox17_Click(object sender, EventArgs e)
@@ -584,15 +683,18 @@ namespace smartfarm
 
         private void temp_time_Tick(object sender, EventArgs e)
         {
-            if(GPIO.Output19.IsOn)
+            if (GPIO.Output19.IsOn)
             {
                 variable.instance.temp = false;
-                temp_time.Interval = (int)((variable.instance.temp_stoptimeHH * 60 * 60) + (variable.instance.temp_stoptimeHH * 60) + (variable.instance.temp_stoptimeSS));
+                pb_temp.Image = Resources.btn_off;
+                temp_time.Interval = (int)((variable.instance.temp_stoptimeHH * 60 * 60) + (variable.instance.temp_stoptimeHH * 60) + (variable.instance.temp_stoptimeSS))*1000<20? temp_time.Interval:(int)((variable.instance.temp_stoptimeHH * 60 * 60) + (variable.instance.temp_stoptimeHH * 60) + (variable.instance.temp_stoptimeSS)) * 1000;
+                
             }
             else
             {
                 variable.instance.temp = true;
-                temp_time.Interval = (int)((variable.instance.temp_runTimeHH * 60 * 60) + (variable.instance.temp_runTimeMM * 60) + (variable.instance.temp_runTimeSS));
+                pb_temp.Image = Resources.btn_on;
+                temp_time.Interval = (int)((variable.instance.temp_runTimeHH * 60 * 60) + (variable.instance.temp_runTimeMM * 60) + (variable.instance.temp_runTimeSS)) * 1000 < 20?temp_time.Interval: (int)((variable.instance.temp_runTimeHH * 60 * 60) + (variable.instance.temp_runTimeMM * 60) + (variable.instance.temp_runTimeSS)) * 1000;
             }
             GPIO.Output19.IsOn = !GPIO.Output19.IsOn;
         }
@@ -602,14 +704,31 @@ namespace smartfarm
             if (GPIO.Output20.IsOn)
             {
                 variable.instance.humin = false;
-                humi_time.Interval = (int)((variable.instance.humi_stoptimeHH * 60 * 60) + (variable.instance.humi_stoptimeHH * 60) + (variable.instance.humi_stoptimeSS));
+                pb_humi.Image = Resources.btn_off;
+                humi_time.Interval = (int)((variable.instance.humi_stoptimeHH * 60 * 60) + (variable.instance.humi_stoptimeHH * 60) + (variable.instance.humi_stoptimeSS)) * 1000 < 2?humi_time.Interval: (int)((variable.instance.humi_stoptimeHH * 60 * 60) + (variable.instance.humi_stoptimeHH * 60) + (variable.instance.humi_stoptimeSS)) * 1000;
             }
             else
             {
                 variable.instance.humin = true;
-                humi_time.Interval = (int)((variable.instance.humi_runTimeHH * 60 * 60) + (variable.instance.humi_runTimeMM * 60) + (variable.instance.humi_runTimeSS));
+                pb_humi.Image = Resources.btn_on;
+                humi_time.Interval = (int)((variable.instance.humi_runTimeHH * 60 * 60) + (variable.instance.humi_runTimeMM * 60) + (variable.instance.humi_runTimeSS)) * 1000 < 2?humi_time.Interval:(int)((variable.instance.humi_runTimeHH * 60 * 60) + (variable.instance.humi_runTimeMM * 60) + (variable.instance.humi_runTimeSS)) * 1000;
             }
             GPIO.Output20.IsOn = !GPIO.Output20.IsOn;
+        }
+
+        private void bk_water_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+            GPIO.Output22.IsOn = true;
+            //MessageBox.Show("22번 핀 작동");
+            Thread.Sleep(1000 * 3);
+            GPIO.Output22.IsOn = false;
+            //MessageBox.Show("22번 핀 작동");
+        }
+
+        private void bk_water_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            button1.Enabled = !button1.Enabled;
         }
     }
 }

@@ -152,6 +152,7 @@ namespace smartfarm
 
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
         {
+            
             pictureBox2.Image = Resources.apply;
 
             variable.instance.auto_TempLOW = this.lowTemp;
@@ -171,7 +172,6 @@ namespace smartfarm
             variable.instance.auto_HumLOW = this.lowHumi;
             variable.instance.auto_HumHIGH = this.highHumi;
             variable.instance.Pump_period = this.pumpPeriod;
-
             //db 세팅 저장
             DB.Instance.query_execute("update setting set " +
                 $"auto_HumLOW = {variable.instance.auto_HumLOW}," +
@@ -205,6 +205,7 @@ namespace smartfarm
                 $"save_period ={variable.instance.save_period}," +
                 $"PumP_period ={variable.instance.Pump_period};"+
                 $"","insert");
+            DB.Instance.query_execute("select * from setting;", "select");
             MessageBox.Show("설정 저장이 완료되었습니다.");
         }
 

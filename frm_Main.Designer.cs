@@ -87,6 +87,7 @@
             this.pb_btn_setting = new System.Windows.Forms.PictureBox();
             this.temp_time = new System.Windows.Forms.Timer(this.components);
             this.humi_time = new System.Windows.Forms.Timer(this.components);
+            this.bk_water = new System.ComponentModel.BackgroundWorker();
             this.plin_humin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_humini)).BeginInit();
             this.panel4.SuspendLayout();
@@ -511,11 +512,12 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 60000;
+            this.timer1.Interval = 1800000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // tm_input
             // 
+            this.tm_input.Interval = 1000;
             this.tm_input.Tick += new System.EventHandler(this.tm_input_Tick);
             // 
             // tbar_humi
@@ -691,6 +693,11 @@
             this.humi_time.Interval = 1000000;
             this.humi_time.Tick += new System.EventHandler(this.humi_time_Tick);
             // 
+            // bk_water
+            // 
+            this.bk_water.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bk_water_DoWork);
+            this.bk_water.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bk_water_RunWorkerCompleted);
+            // 
             // frm_Main
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -827,6 +834,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer temp_time;
         private System.Windows.Forms.Timer humi_time;
+        private System.ComponentModel.BackgroundWorker bk_water;
     }
 }
 

@@ -198,8 +198,8 @@ namespace smartfarms
                 query_execute("create database if not exists `farmming`;");
                 query_execute("use farmming;");
                 query_execute("create table if not exists save_state (" +
-                    "temperature int," +
-                    "humidity int," +
+                    "temperature double," +
+                    "humidity double," +
                     "Fan bool," +
                     "Pump bool," +
                     "dates varchar(20)" +
